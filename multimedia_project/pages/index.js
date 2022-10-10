@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Animal World</title>
+        <title>Animal World | Homepage</title>
         <meta name="description" content="Interactive and Fun Website for Kids!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
