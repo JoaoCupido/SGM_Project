@@ -3,6 +3,8 @@ import '../styles/globals.css'
 
 // add bootstrap css
 import 'bootstrap/dist/css/bootstrap.css'
+// add bootstrap icons
+import 'bootstrap-icons/font/bootstrap-icons.css'
 // own css files here
 // import "../css/customcss.css";
 
