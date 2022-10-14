@@ -4,7 +4,21 @@ import Footer from "../comps/footer"
 import Header from "../comps/header"
 import Link from 'next/link'
 
-export default function Home() {
+// Fetching data from the JSON file
+import fsPromises from 'fs/promises';
+import path from 'path'
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'animalsData.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const objectData = JSON.parse(jsonData);
+
+  return {
+    props: objectData
+  }
+}
+
+export default function Home(props) {
+  const animals = props.animals;
   return (
     <div className={styles.container}>
       <Head>
@@ -55,6 +69,14 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </div>
+          {animals.map(animal =>
+            <div className={styles.card} key={animal.id}>
+            <h2>{animal.name} &rarr;</h2>
+            <p>
+            {animal.image}
+            </p>
+            </div>
+          )}
         </div>
       </main>
 

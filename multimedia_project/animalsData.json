@@ -1,0 +1,18 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Dog",
+      "images" : [1, 2, 3],
+      "model3d": null,
+      "video": null
+    },
+    {
+      "id": 2,
+      "name": "Cat",
+      "images" : [1, 2, 3],
+      "model3d": null,
+      "video": null
+    }
+  ]
+}
