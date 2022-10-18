@@ -9,6 +9,7 @@ export default function Header() {
                 <a
                     target="_self"
                     rel="noopener noreferrer"
+                    className="text-center"
                 >
                     <span className={styles.logo}>
                         <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />

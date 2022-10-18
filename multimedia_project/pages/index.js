@@ -37,15 +37,8 @@ export default function Home(props) {
         </h1>
 
         <p className={styles.description}>
-          Click on the button below to start choosing an animal!
+          Choose a category below to start choosing your favourite animal!
         </p>
-
-        <Link href="/animals/">
-          <a className="btn btn-primary btn-lg" role="button">Choose an animal!</a>
-        </Link>
-
-        <br/>
-        <br/>
 
         <div className={styles.grid}>
           {types.map(type =>

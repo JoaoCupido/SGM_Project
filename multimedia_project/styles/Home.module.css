@@ -141,8 +141,16 @@
   margin-right: 0.5rem;
 }
 
-.logo {
-  height: 1em;
+@supports (-webkit-text-stroke: 1px black) {
+  .title,
+  .description {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }
+  .title a {
+    -webkit-text-stroke: 1px #787a00;
+    -webkit-text-fill-color: #FDFF00;
+  }
 }
 
 @media (max-width: 600px) {
