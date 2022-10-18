@@ -41,8 +41,14 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #f39e00;
+  color: #FDFF00;
 }
+/*
+.button {
+  background-color: #2192FF;
+  border-color: #2192FF;
+}
+ */
 
 .title a {
   text-decoration: none;
@@ -108,14 +114,14 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
-  background-color: green;
+  background-color: #38E54D;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  border-color: #f39e00;
-  background-color: darkgreen;
+  border-color: #FDFF00;
+  background-color: #9CFF2E;
 }
 
 .card h2 {

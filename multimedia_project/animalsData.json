@@ -3,6 +3,9 @@
     {
       "id": 1,
       "name": "Dog",
+      "tamed": "domestic",
+      "habitat": "land",
+      "locations": [],
       "images" : [1, 2, 3],
       "model3d": null,
       "video": null
@@ -10,9 +13,29 @@
     {
       "id": 2,
       "name": "Cat",
+      "tamed": "domestic",
+      "habitat": "land",
+      "locations": [],
       "images" : [1, 2, 3],
       "model3d": null,
       "video": null
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "name": "Domestic",
+      "description": "Animals that has been tamed and kept by humans as pets."
+    },
+    {
+      "id": 2,
+      "name": "Wild",
+      "description": "Animals that live in nature and are not tamed by humans."
+    },
+    {
+      "id": 3,
+      "name": "Prehistoric",
+      "description": "An incredible world of dinosaurs with awesome facts."
     }
   ]
 }

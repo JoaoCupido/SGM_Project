@@ -19,6 +19,7 @@ export async function getStaticProps() {
 
 export default function Home(props) {
   const animals = props.animals;
+  const types = props.types;
   return (
     <div className={styles.container}>
       <Head>
@@ -48,33 +49,12 @@ export default function Home(props) {
         <br/>
 
         <div className={styles.grid}>
-          <div className={styles.card}>
-            <h2>For Kids!</h2>
-            <p>Images, videos and even 3D models to interact with!</p>
-          </div>
-
-          <div className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </div>
-
-          <div className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </div>
-
-          <div className={styles.card}>
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </div>
-          {animals.map(animal =>
-            <div className={styles.card} key={animal.id}>
-            <h2>{animal.name} &rarr;</h2>
-            <p>
-            {animal.image}
-            </p>
+          {types.map(type =>
+            <div className={styles.card} key={type.id}>
+              <h2>{type.name} &rarr;</h2>
+              <p>
+                {type.description}
+              </p>
             </div>
           )}
         </div>
