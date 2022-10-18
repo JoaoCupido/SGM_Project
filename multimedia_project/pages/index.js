@@ -18,7 +18,6 @@ export async function getStaticProps() {
 }
 
 export default function Home(props) {
-  const animals = props.animals;
   const types = props.types;
   return (
     <div className={styles.container}>
@@ -50,11 +49,15 @@ export default function Home(props) {
 
         <div className={styles.grid}>
           {types.map(type =>
-            <div className={styles.card} key={type.id}>
-              <h2>{type.name} &rarr;</h2>
-              <p>
-                {type.description}
-              </p>
+            <div key={type.id}>
+              <Link href={type.url}>
+                <div className={styles.card}>
+                  <h2>{type.name} &rarr;</h2>
+                  <p>
+                    {type.description}
+                  </p>
+                </div>
+              </Link>
             </div>
           )}
         </div>

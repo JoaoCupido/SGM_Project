@@ -22,7 +22,7 @@ export default function Header() {
             <Link href="/animals/">
                 <a className="btn btn-primary" role="button">Animals</a>
             </Link>
-            <Link href="/search/">
+            <Link href="/animals/">
                 <a className="btn btn-primary" role="button"><i className={`${"bi bi-search"} ${styles["i"]}`}></i>Search</a>
             </Link>
         </header>
