@@ -8,7 +8,7 @@ import Link from 'next/link'
 import fsPromises from 'fs/promises';
 import path from 'path'
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'animalsData.json');
+  const filePath = path.join(process.cwd(), 'typesData.json');
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 
