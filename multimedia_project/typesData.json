@@ -1,0 +1,28 @@
+{
+  "types": [
+    {
+      "id": 1,
+      "name": "All Animals",
+      "url": "/animals/",
+      "description": "All available animals that you can choose from in a grid pattern."
+    },
+    {
+      "id": 2,
+      "name": "Domestic",
+      "url": "/animals/",
+      "description": "Animals that has been tamed and kept by humans as pets."
+    },
+    {
+      "id": 3,
+      "name": "Wild",
+      "url": "/animals/",
+      "description": "Animals that live in nature and are not tamed by humans."
+    },
+    {
+      "id": 4,
+      "name": "Prehistoric",
+      "url": "/animals/",
+      "description": "An incredible world of dinosaurs with awesome facts."
+    }
+  ]
+}
