@@ -1,32 +1,32 @@
 {
   "animals": [
     {
-      "id": 1,
+      "id": "dog",
       "url": "/animals/dog",
       "name": "Dog",
       "tamed": "domestic",
       "habitat": "land",
-      "locations": [],
+      "locations": "this, there and that.",
       "images" : [
         {
           "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
-          "alt": "Golden Retriever standing in a river, gently playing."
+          "alt": "A Golden Retriever standing in a river, gently playing."
         }
       ],
       "model3d": null,
       "video": null
     },
     {
-      "id": 2,
+      "id": "cat",
       "name": "Cat",
       "url": "/animals/cat",
       "tamed": "domestic",
       "habitat": "land",
-      "locations": [],
+      "locations": "this, there and that.",
       "images" : [
         {
           "imagelink": "https://api-ninjas.com/images/cats/abyssinian.jpg",
-          "alt": "Abyssinian Cat."
+          "alt": "Portrait of a Abyssinian Cat."
         }
       ],
       "model3d": null,
