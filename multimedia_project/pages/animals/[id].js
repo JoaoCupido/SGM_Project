@@ -73,7 +73,6 @@ export default function Animal(props) {
 
                     </main>
                 </div>
-                )
             </main>
 
             <Footer/>

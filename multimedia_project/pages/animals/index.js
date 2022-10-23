@@ -3,11 +3,12 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import Footer from "../../comps/footer";
 import Header from "../../comps/header";
-import Link from 'next/link'
+import Link from 'next/link';
+import sortBy from 'sort-by';
 
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
-import path from 'path'
+import path from 'path';
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'animalsData.json');
   const jsonData = await fsPromises.readFile(filePath);
@@ -20,6 +21,7 @@ export async function getStaticProps() {
 
 export default function Animals(props) {
   const animals = props.animals;
+  animals.sort(sortBy('name','id'));
 
   return (
     <div className={styles.container}>
