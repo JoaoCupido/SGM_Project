@@ -47,11 +47,12 @@ export async function getStaticPaths() {
 export default function Animal(props) {
     const router = useRouter()
     const { id } = router.query
+    const { content } = "Charateristics of " + props.name;
     return (
         <div className={styles.container}>
             <Head>
-                <title>List of Animals</title>
-                <meta name="description" content="A list of animals to search for and filter." />
+                <title>Animal World | {props.name}</title>
+                <meta name="description" content={content} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

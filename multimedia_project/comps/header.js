@@ -12,9 +12,8 @@ export default function Header() {
                     className="text-center"
                 >
                     <span className={styles.logo}>
-                        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                        <Image src="/logoTitle.png" alt="Animal World Logo" width={503*0.9} height={90*0.9} />
                     </span>
-                    Animal World
                 </a>
             </Link>
             <Link href="/">

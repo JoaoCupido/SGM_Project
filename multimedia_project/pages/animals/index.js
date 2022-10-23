@@ -24,7 +24,7 @@ export default function Animals(props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>List of Animals</title>
+        <title>Animal World | List</title>
         <meta name="description" content="A list of animals to search for and filter." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
