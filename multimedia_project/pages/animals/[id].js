@@ -54,12 +54,12 @@ const onSceneReady = (scene) => {
 
     SceneLoader.ShowLoadingScreen = false;
     SceneLoader.Append(
-        "/models/dog/",
-        "scene.babylon",
+        "/models/",
+        "dog.babylon",
         scene,
         (meshes) => {
             scene.activeCamera = meshes.cameras[1];
-            scene.activeCamera.attachControl(true);
+            scene.activeCamera.attachControl(false);
             scene.createDefaultLight(true);
         }
     );
@@ -74,11 +74,11 @@ const onRender = (scene) => {};
 
 export function hasVideo(video, animalId)
 {
-    if(video !== null)
+    if(video !== false)
     {
         const source = "/videos/" + animalId + ".mp4";
         return (
-            <video width="90%" controls className={`${"pt-2 pb-2"}`}>
+            <video width="44%" controls className={`${"pb-2 pl-2"}`}>
                 <source src={source} type="video/mp4"/>
                 Your browser does not support HTML video.
             </video>
@@ -115,34 +115,42 @@ export default function Animal(props) {
                         <br/>
 
                         <div className={styles.animGrid}>
-                            <Image src={((props.first_image)[0]).imagelink} width="300px" height="300px" alt={((props.first_image)[0]).alt}/>
-                            <p className={`${"pl-20"} ${styles["description"]}`}>
-                                - Type: {props.type}<br/>
-                                - Diet: {props.diet}<br/>
-                                - Tame: {props.tamed}
-                            </p>
+                            <div className={`${"pl-10 pr-10 pb-2"}`}>
+                                <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt} width={800}/>
+                            </div>
+                            <div className={`${"pl-10 pr-10 pb-2"}`}>
+                                <p className={`${styles["description"]}`}>
+                                    - Type: {props.type}<br/>
+                                    - Diet: {props.diet}<br/>
+                                    - Tame: {props.tamed}
+                                </p>
+                            </div>
 
-                            <p className={`${"pr-20"} ${styles["description"]}`}>
-                                - Type of habitat: {props.habitat}<br/>
-                                - Locations: {props.locations}<br/><br/>
-                                Fun Fact!<br/>{props.fun_fact}
-                            </p>
-                            <Image src={((props.second_image)[0]).imagelink} width="300px" height="300px" alt={((props.second_image)[0]).alt}/>
+                            <div className={`${"pl-10 pr-10 pb-2"}`}>
+                                <p className={`${styles["description"]}`}>
+                                    - Type of habitat: {props.habitat}<br/>
+                                    - Locations: {props.locations}<br/><br/>
+                                    Fun Fact!<br/>{props.fun_fact}
+                                </p>
+                            </div>
+                            <div className={`${"pl-10 pr-10 pb-2"}`}>
+                                <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt} width={800}/>
+                            </div>
 
                             <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
                             { hasVideo(props.video, props.id) }
 
 
-
-                            <p>
-                                <Link href="/">
-                                    <a className="btn btn-primary" role="button">Back to Homepage</a>
-                                </Link>
-                            </p>
                         </div>
 
                     </main>
                 </div>
+
+                <p>
+                    <Link href="/animals/">
+                        <a className="btn btn-primary" role="button">&larr; Back to Animal List</a>
+                    </Link>
+                </p>
             </main>
 
             <Footer/>

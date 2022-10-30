@@ -65,7 +65,7 @@ const BabylonScene = (props) => {
 
     return (
         <canvas
-            style={{ width: "90%", height: "90%" }}
+            style={{ width: "48%", height: "48%" }}
             ref={reactCanvas}
             {...rest}
         />

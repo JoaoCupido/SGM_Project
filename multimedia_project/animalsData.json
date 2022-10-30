@@ -12,14 +12,14 @@
       "fun_fact": "Their sense of smell is at least 40x better than ours!",
       "first_image" : [
         {
-          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
-          "alt": "A Golden Retriever standing in a river, gently playing."
+          "imagelink": "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "alt": "White and short-fur dog on a green field."
         }
       ],
       "second_image" : [
         {
-          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
-          "alt": "A Golden Retriever standing in a river, gently playing."
+          "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "alt": "Closed photograph of a brown dog."
         }
       ],
       "images" : [
@@ -30,7 +30,7 @@
       ],
       "model": null,
       "environment": null,
-      "video": "y"
+      "video": true
     },
     {
       "id": "cat",
@@ -61,8 +61,8 @@
         }
       ],
       "model": null,
-      "environment": "DEBUG.dds",
-      "video": null
+      "environment": null,
+      "video": false
     }
   ]
 }
