@@ -7,7 +7,6 @@ import Link from 'next/link';
 import React from "react";
 import {SceneLoader} from "babylonjs";
 import BabylonScene from "../../comps/BabylonScene";
-import "babylonjs-loaders";
 
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
