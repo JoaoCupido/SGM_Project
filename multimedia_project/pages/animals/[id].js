@@ -3,12 +3,17 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import Footer from "../../comps/footer";
 import Header from "../../comps/header";
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import Link from 'next/link';
+import React from "react";
+import {SceneLoader} from "babylonjs";
+import BabylonScene from "../../comps/BabylonScene";
+import "babylonjs-loaders";
 
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
 import path from 'path'
+import {CubeTexture} from "@babylonjs/core";
+
 export async function getStaticProps({params}) {
     const filePath = path.join(process.cwd(), 'animalsData.json');
     const jsonData = await fsPromises.readFile(filePath);
@@ -44,10 +49,51 @@ export async function getStaticPaths() {
     };
 }
 
+const onSceneReady = (scene) => {
+    scene.createDefaultCamera(true);
+
+    SceneLoader.ShowLoadingScreen = false;
+    SceneLoader.Append(
+        "/models/dog/",
+        "scene.babylon",
+        scene,
+        (meshes) => {
+            scene.activeCamera = meshes.cameras[1];
+            scene.activeCamera.attachControl(true);
+            scene.createDefaultLight(true);
+        }
+    );
+
+    return scene;
+};
+
+/**
+ * Will run on every frame render.
+ */
+const onRender = (scene) => {};
+
+export function hasVideo(video, animalId)
+{
+    if(video !== null)
+    {
+        const source = "/videos/" + animalId + ".mp4";
+        return (
+            <video width="90%" controls className={`${"pt-2 pb-2"}`}>
+                <source src={source} type="video/mp4"/>
+                Your browser does not support HTML video.
+            </video>
+        )
+    }
+    else
+    {
+        return (
+            <br/>
+        )
+    }
+}
+
 export default function Animal(props) {
-    const router = useRouter()
-    const { id } = router.query
-    const { content } = "Charateristics of " + props.name;
+    const { content } = "Characteristics of " + props.name;
     return (
         <div className={styles.container}>
             <Head>
@@ -60,16 +106,40 @@ export default function Animal(props) {
 
             <main>
                 <div className={styles.container}>
-                    <Head>
-                        <title>{props.name}</title>
-                    </Head>
-
                     <main className={styles.main}>
                         <h1 className={styles.title}>
-                            {id}
+                            {props.name}
                         </h1>
 
-                        <Image src={((props.images)[0]).imagelink} width="300px" height="300px" alt={((props.images)[0]).alt}/>
+                        <br/>
+                        <br/>
+
+                        <div className={styles.animGrid}>
+                            <Image src={((props.first_image)[0]).imagelink} width="300px" height="300px" alt={((props.first_image)[0]).alt}/>
+                            <p className={`${"pl-20"} ${styles["description"]}`}>
+                                - Type: {props.type}<br/>
+                                - Diet: {props.diet}<br/>
+                                - Tame: {props.tamed}
+                            </p>
+
+                            <p className={`${"pr-20"} ${styles["description"]}`}>
+                                - Type of habitat: {props.habitat}<br/>
+                                - Locations: {props.locations}<br/><br/>
+                                Fun Fact!<br/>{props.fun_fact}
+                            </p>
+                            <Image src={((props.second_image)[0]).imagelink} width="300px" height="300px" alt={((props.second_image)[0]).alt}/>
+
+                            <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
+                            { hasVideo(props.video, props.id) }
+
+
+
+                            <p>
+                                <Link href="/">
+                                    <a className="btn btn-primary" role="button">Back to Homepage</a>
+                                </Link>
+                            </p>
+                        </div>
 
                     </main>
                 </div>

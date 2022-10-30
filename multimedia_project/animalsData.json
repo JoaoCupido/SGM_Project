@@ -4,32 +4,64 @@
       "id": "dog",
       "url": "/animals/dog",
       "name": "Dog",
-      "tamed": "domestic",
-      "habitat": "land",
-      "locations": "this, there and that.",
+      "type": "Mammal",
+      "diet": "Omnivorous",
+      "tamed": "Domestic",
+      "habitat": "Land",
+      "locations": "DEBUG",
+      "fun_fact": "Their sense of smell is at least 40x better than ours!",
+      "first_image" : [
+        {
+          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
+          "alt": "A Golden Retriever standing in a river, gently playing."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
+          "alt": "A Golden Retriever standing in a river, gently playing."
+        }
+      ],
       "images" : [
         {
           "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
           "alt": "A Golden Retriever standing in a river, gently playing."
         }
       ],
-      "model3d": null,
-      "video": null
+      "model": null,
+      "environment": null,
+      "video": "y"
     },
     {
       "id": "cat",
       "name": "Cat",
       "url": "/animals/cat",
-      "tamed": "domestic",
-      "habitat": "land",
-      "locations": "this, there and that.",
+      "type": "Mammal",
+      "diet": "Omnivorous",
+      "tamed": "Domestic",
+      "habitat": "Land",
+      "locations": "DEBUG",
+      "fun_fact": "DEBUG",
+      "first_image" : [
+        {
+          "imagelink": "https://api-ninjas.com/images/cats/abyssinian.jpg",
+          "alt": "Portrait of a Abyssinian Cat."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://api-ninjas.com/images/cats/abyssinian.jpg",
+          "alt": "Portrait of a Abyssinian Cat."
+        }
+      ],
       "images" : [
         {
           "imagelink": "https://api-ninjas.com/images/cats/abyssinian.jpg",
           "alt": "Portrait of a Abyssinian Cat."
         }
       ],
-      "model3d": null,
+      "model": null,
+      "environment": "DEBUG.dds",
       "video": null
     }
   ]

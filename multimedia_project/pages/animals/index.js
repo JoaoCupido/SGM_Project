@@ -41,7 +41,7 @@ export default function Animals(props) {
               <div key={animal.id}>
                 <Link href={animal.url}>
                     <div className={styles.animalCard}>
-                        <Image src={((animal.images)[0]).imagelink} alt={((animal.images)[0]).alt} width={240} height={240} className={styles.grow}/>
+                        <Image src={((animal.first_image)[0]).imagelink} alt={((animal.first_image)[0]).alt} width={240} height={240} className={styles.grow}/>
                         <h2>{animal.name}</h2>
                     </div>
                 </Link>

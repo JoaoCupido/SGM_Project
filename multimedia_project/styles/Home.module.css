@@ -76,6 +76,7 @@
 .description,
 .card,
 .grid,
+.animGrid,
 .footer {
   /* GLOBAL FONT */
   font-family: "Comic Sans MS", sans-serif;
@@ -97,12 +98,21 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
+.grid,
+.animGrid {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+}
+
+.grid {
+  max-width: 800px;
+}
+
+.animGrid {
+  max-width: 1200px;
 }
 
 .card {
@@ -197,7 +207,8 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .grid,
+  .animGrid {
     width: 100%;
     flex-direction: column;
   }
