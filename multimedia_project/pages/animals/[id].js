@@ -115,7 +115,7 @@ export default function Animal(props) {
 
                         <div className={styles.animGrid}>
                             <div className={`${"pl-10 pr-10 pb-2"}`}>
-                                <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt} width={800}/>
+                                <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt} width={600}/>
                             </div>
                             <div className={`${"pl-10 pr-10 pb-2"}`}>
                                 <p className={`${styles["description"]}`}>
@@ -133,7 +133,7 @@ export default function Animal(props) {
                                 </p>
                             </div>
                             <div className={`${"pl-10 pr-10 pb-2"}`}>
-                                <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt} width={800}/>
+                                <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt} width={600}/>
                             </div>
 
                             <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
