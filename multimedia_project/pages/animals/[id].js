@@ -1,17 +1,18 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import Footer from "../../comps/footer";
 import Header from "../../comps/header";
 import Link from 'next/link';
 import React from "react";
 import {SceneLoader} from "babylonjs";
+import {CubeTexture} from "@babylonjs/core";
 import BabylonScene from "../../comps/BabylonScene";
+import {Carousel} from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
 import path from 'path'
-import {CubeTexture} from "@babylonjs/core";
 
 export async function getStaticProps({params}) {
     const filePath = path.join(process.cwd(), 'animalsData.json');
@@ -77,10 +78,42 @@ export function hasVideo(video, animalId)
     {
         const source = "/videos/" + animalId + ".mp4";
         return (
-            <video width="44%" controls className={`${"pb-2 pl-2"}`}>
+            <video width="44%" controls className={`${"pb-2 pl-2 pt-2"}`}>
                 <source src={source} type="video/mp4"/>
                 Your browser does not support HTML video.
             </video>
+        )
+    }
+    else
+    {
+        return (
+            <br/>
+        )
+    }
+}
+
+export function swapImageFeature(imageSwap, imagesList)
+{
+    if(imageSwap)
+    {
+        //Carousel NPM
+        return (
+            <Carousel width={800}
+                      showArrows={true}
+                      showStatus={true}
+                      showIndicators={false}
+                      showThumbs={true}
+                      autoPlay={false}
+                      transitionTime={500}
+                      swipeable={false}
+                      emulateTouch={true}>
+                {imagesList.map(image =>
+                    <div>
+                        <img src={image.imagelink} alt={image.alt}/>
+                        <p className="legend">{image.alt}</p>
+                    </div>
+                )}
+            </Carousel>
         )
     }
     else
@@ -139,7 +172,7 @@ export default function Animal(props) {
                             <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
                             { hasVideo(props.video, props.id) }
 
-
+                            { swapImageFeature(props.imageSwap, props.images) }
                         </div>
 
                     </main>

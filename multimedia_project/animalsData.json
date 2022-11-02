@@ -25,12 +25,21 @@
       "images" : [
         {
           "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
-          "alt": "A Golden Retriever standing in a river, gently playing."
+          "alt": "A Golden Retriever standing in a river, gently playing1."
+        },
+        {
+          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
+          "alt": "A Golden Retriever standing in a river, gently playing2."
+        },
+        {
+          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
+          "alt": "A Golden Retriever standing in a river, gently playing3."
         }
       ],
       "model": null,
       "environment": null,
-      "video": true
+      "video": true,
+      "imageSwap": true
     },
     {
       "id": "cat",
@@ -62,7 +71,8 @@
       ],
       "model": null,
       "environment": null,
-      "video": false
+      "video": false,
+      "imageSwap": false
     }
   ]
 }
