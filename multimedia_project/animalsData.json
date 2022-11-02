@@ -12,14 +12,14 @@
       "fun_fact": "Their sense of smell is at least 40x better than ours!",
       "first_image" : [
         {
-          "imagelink": "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-          "alt": "White and short-fur dog on a green field."
+          "imagelink": "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg",
+          "alt": "White Shorthaired Dog In Green Field"
         }
       ],
       "second_image" : [
         {
-          "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-          "alt": "Closed photograph of a brown dog."
+          "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg",
+          "alt": "Closeup Photo Of Brown And Black Dog's Face"
         }
       ],
       "images" : [

@@ -78,7 +78,7 @@ export function hasVideo(video, animalId)
     {
         const source = "/videos/" + animalId + ".mp4";
         return (
-            <video width="44%" controls className={`${"pb-2 pl-2 pt-2"}`}>
+            <video width={800} controls className={`${"pb-2 pl-2 pt-2"}`}>
                 <source src={source} type="video/mp4"/>
                 Your browser does not support HTML video.
             </video>
@@ -137,46 +137,56 @@ export default function Animal(props) {
             <Header/>
 
             <main>
-                <div className={styles.container}>
-                    <main className={styles.main}>
-                        <h1 className={styles.title}>
-                            {props.name}
-                        </h1>
+                    <main className={`${"container-fluid"} ${styles["main"]}`}>
+                        <div className={`${"row"}`}>
+                            <h1 className={`${"pb-10 col d-flex align-items-center justify-content-center"} ${styles["title"]}`}>
+                                {props.name}
+                            </h1>
+                        </div>
 
                         <br/>
                         <br/>
 
-                        <div className={styles.animGrid}>
-                            <div className={`${"pl-10 pr-10 pb-2"}`}>
-                                <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt} width={600}/>
+                        <div className={`${"row"}`}>
+                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                                <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt}/>
                             </div>
-                            <div className={`${"pl-10 pr-10 pb-2"}`}>
+                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
                                 <p className={`${styles["description"]}`}>
                                     - Type: {props.type}<br/>
                                     - Diet: {props.diet}<br/>
                                     - Tame: {props.tamed}
                                 </p>
                             </div>
+                        </div>
 
-                            <div className={`${"pl-10 pr-10 pb-2"}`}>
+                        <div className={`${"row"}`}>
+                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
                                 <p className={`${styles["description"]}`}>
                                     - Type of habitat: {props.habitat}<br/>
                                     - Locations: {props.locations}<br/><br/>
                                     Fun Fact!<br/>{props.fun_fact}
                                 </p>
                             </div>
-                            <div className={`${"pl-10 pr-10 pb-2"}`}>
-                                <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt} width={600}/>
+                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                                <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt}/>
                             </div>
-
-                            <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
-                            { hasVideo(props.video, props.id) }
-
-                            { swapImageFeature(props.imageSwap, props.images) }
+                        </div>
+                        <div className={`${"row"}`}>
+                            <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
+                                <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
+                            </div>
+                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                                { hasVideo(props.video, props.id) }
+                            </div>
+                        </div>
+                        <div className={`${"row"}`}>
+                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                                { swapImageFeature(props.imageSwap, props.images) }
+                            </div>
                         </div>
 
                     </main>
-                </div>
 
                 <p>
                     <Link href="/animals/">
