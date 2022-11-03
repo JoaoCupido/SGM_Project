@@ -158,54 +158,54 @@ export default function Animal(props) {
             <Header/>
 
             <main>
-                    <main className={`${"container"} ${styles["main"]}`}>
-                        <div className={`${"row"}`}>
-                            <h1 className={`${"pb-10 col d-flex align-items-center justify-content-center"} ${styles["title"]}`}>
-                                {props.name}
-                            </h1>
-                        </div>
+                <main className={`${"container"} ${styles["main"]}`}>
+                    <div className={`${"row"}`}>
+                        <h1 className={`${"pb-10 col d-flex align-items-center justify-content-center"} ${styles["title"]}`}>
+                            {props.name}
+                        </h1>
+                    </div>
 
-                        <br/>
-                        <br/>
+                    <br/>
+                    <br/>
 
-                        <div className={`${"row"}`}>
-                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt} className={`${"rounded"}`}/>
-                            </div>
-                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                <p className={`${styles["descriptionAnimal"]}`}>
-                                    - Type: {props.type}<br/>
-                                    - Diet: {props.diet}<br/>
-                                    - Tame: {props.tamed}
-                                </p>
-                            </div>
+                    <div className={`${"row"}`}>
+                        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                            <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt} className={`${"rounded"}`}/>
                         </div>
+                        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                            <p className={`${styles["descriptionAnimal"]}`}>
+                                - Type: {props.type}<br/>
+                                - Diet: {props.diet}<br/>
+                                - Tame: {props.tamed}
+                            </p>
+                        </div>
+                    </div>
 
-                        <div className={`${"row"}`}>
-                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                <p className={`${styles["descriptionAnimal"]}`}>
-                                    - Type of habitat: {props.habitat}<br/>
-                                    - Locations: {props.locations}<br/><br/>
-                                    Fun Fact!<br/>{props.fun_fact}
-                                </p>
-                            </div>
-                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt} className={`${"rounded"}`}/>
-                            </div>
+                    <div className={`${"row"}`}>
+                        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                            <p className={`${styles["descriptionAnimal"]}`}>
+                                - Type of habitat: {props.habitat}<br/>
+                                - Locations: {props.locations}<br/><br/>
+                                Fun Fact!<br/>{props.fun_fact}
+                            </p>
                         </div>
-                        <div className={`${"row"}`}>
-                            <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
-                                <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" className={`${"rounded"}`}/>
-                            </div>
-                            { hasVideo(props.video, props.id) }
+                        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                            <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt} className={`${"rounded"}`}/>
                         </div>
-                        <div className={`${"row"}`}>
-                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                { swapImageFeature(props.imageSwap, props.images) }
-                            </div>
+                    </div>
+                    <div className={`${"row"}`}>
+                        <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
+                            <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" className={`${"rounded"}`}/>
                         </div>
+                        { hasVideo(props.video, props.id) }
+                    </div>
+                    <div className={`${"row"}`}>
+                        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                            { swapImageFeature(props.imageSwap, props.images) }
+                        </div>
+                    </div>
 
-                    </main>
+                </main>
 
                 <p>
                     <Link href="/animals/">

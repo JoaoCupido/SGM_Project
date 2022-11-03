@@ -217,21 +217,18 @@
     flex-direction: column;
   }
 }
-/*
+
 @media (prefers-color-scheme: dark) {
-  @supports (-webkit-text-stroke: 1px black) {
-    .title,
-    .description,
-    .descriptionAnimal,
-    .animalCard h2 {
-      -webkit-text-stroke: 1px black;
-      -webkit-text-fill-color: white;
-    }
-    .title a {
-      -webkit-text-stroke: 1px #787a00;
-      -webkit-text-fill-color: #FDFF00;
-    }
+  .title,
+  .description,
+  .descriptionAnimal,
+  .animalCard h2 {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+  }
+  .title a {
+    -webkit-text-stroke: 1px #787a00;
+    -webkit-text-fill-color: #FDFF00;
   }
 }
 
- */
