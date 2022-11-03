@@ -152,7 +152,7 @@ export default function Animal(props) {
                                 <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt} className={`${"rounded"}`}/>
                             </div>
                             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                <p className={`${styles["description"]}`}>
+                                <p className={`${styles["descriptionAnimal"]}`}>
                                     - Type: {props.type}<br/>
                                     - Diet: {props.diet}<br/>
                                     - Tame: {props.tamed}
@@ -162,7 +162,7 @@ export default function Animal(props) {
 
                         <div className={`${"row"}`}>
                             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                <p className={`${styles["description"]}`}>
+                                <p className={`${styles["descriptionAnimal"]}`}>
                                     - Type of habitat: {props.habitat}<br/>
                                     - Locations: {props.locations}<br/><br/>
                                     Fun Fact!<br/>{props.fun_fact}

@@ -68,12 +68,14 @@
 
 .title,
 .description,
+.descriptionAnimal,
 .footer {
   text-align: center;
 }
 
 .title,
 .description,
+.descriptionAnimal,
 .card,
 .grid,
 .footer {
@@ -82,10 +84,18 @@
   color: #eaeaea;
 }
 
-.description {
+.description,
+.descriptionAnimal {
   margin: 4rem 0;
   line-height: 1.5;
+}
+
+.description {
   font-size: 1.5rem;
+}
+
+.descriptionAnimal {
+  font-size: 2rem;
 }
 
 .code {
@@ -186,6 +196,7 @@
 @supports (-webkit-text-stroke: 1px black) {
   .title,
   .description,
+  .descriptionAnimal,
   .animalCard h2 {
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: white;
@@ -211,6 +222,7 @@
   @supports (-webkit-text-stroke: 1px black) {
     .title,
     .description,
+    .descriptionAnimal,
     .animalCard h2 {
       -webkit-text-stroke: 1px black;
       -webkit-text-fill-color: white;
