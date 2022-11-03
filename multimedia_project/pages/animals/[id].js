@@ -62,19 +62,26 @@ export function hasVideo(video, animalId)
     if(video)
     {
         source = "/videos/" + animalId + ".mp4";
+        return (
+            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                <video width={800} controls className={`${"pb-2 pl-2 pt-2 rounded"}`}>
+                    <source src={source} type="video/mp4"/>
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        )
     }
     else {
-        source = ""; //TODO: Add unavailable video design
+        source = "";
+        return (
+            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                <video width={800} controls className={`${"pb-2 pl-2 pt-2 rounded"}`} poster="/videos/video-placeholder.jpg">
+                    <source src={source} type="video/mp4"/>
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        )
     }
-
-    return (
-        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-            <video width={800} controls className={`${"pb-2 pl-2 pt-2 rounded"}`}>
-                <source src={source} type="video/mp4"/>
-                Your browser does not support HTML video.
-            </video>
-        </div>
-    )
 }
 
 export function swapImageFeature(imageSwap, imagesList)
