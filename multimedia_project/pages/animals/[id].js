@@ -78,7 +78,7 @@ export function hasVideo(video, animalId)
     {
         const source = "/videos/" + animalId + ".mp4";
         return (
-            <video width={800} controls className={`${"pb-2 pl-2 pt-2"}`}>
+            <video width={800} controls className={`${"pb-2 pl-2 pt-2 rounded"}`}>
                 <source src={source} type="video/mp4"/>
                 Your browser does not support HTML video.
             </video>
@@ -98,7 +98,7 @@ export function swapImageFeature(imageSwap, imagesList)
     {
         //Carousel NPM
         return (
-            <Carousel width={800}
+            <Carousel className={styles.carouselImages}
                       showArrows={true}
                       showStatus={true}
                       showIndicators={false}
@@ -109,7 +109,7 @@ export function swapImageFeature(imageSwap, imagesList)
                       emulateTouch={true}>
                 {imagesList.map(image =>
                     <div>
-                        <img src={image.imagelink} alt={image.alt}/>
+                        <img src={image.imagelink} alt={image.alt} className={`${"rounded"}`}/>
                         <p className="legend">{image.alt}</p>
                     </div>
                 )}
@@ -137,7 +137,7 @@ export default function Animal(props) {
             <Header/>
 
             <main>
-                    <main className={`${"container-fluid"} ${styles["main"]}`}>
+                    <main className={`${"container"} ${styles["main"]}`}>
                         <div className={`${"row"}`}>
                             <h1 className={`${"pb-10 col d-flex align-items-center justify-content-center"} ${styles["title"]}`}>
                                 {props.name}
@@ -149,7 +149,7 @@ export default function Animal(props) {
 
                         <div className={`${"row"}`}>
                             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt}/>
+                                <img src={((props.first_image)[0]).imagelink} alt={((props.first_image)[0]).alt} className={`${"rounded"}`}/>
                             </div>
                             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
                                 <p className={`${styles["description"]}`}>
@@ -169,12 +169,12 @@ export default function Animal(props) {
                                 </p>
                             </div>
                             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt}/>
+                                <img src={((props.second_image)[0]).imagelink} alt={((props.second_image)[0]).alt} className={`${"rounded"}`}/>
                             </div>
                         </div>
                         <div className={`${"row"}`}>
                             <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
-                                <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
+                                <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" className={`${"rounded"}`}/>
                             </div>
                             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
                                 { hasVideo(props.video, props.id) }
