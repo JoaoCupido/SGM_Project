@@ -74,22 +74,23 @@ const onRender = (scene) => {};
 
 export function hasVideo(video, animalId)
 {
-    if(video !== false)
+    let source;
+    if(video)
     {
-        const source = "/videos/" + animalId + ".mp4";
-        return (
+        source = "/videos/" + animalId + ".mp4";
+    }
+    else {
+        source = ""; //TODO: Add unavailable video design
+    }
+
+    return (
+        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
             <video width={800} controls className={`${"pb-2 pl-2 pt-2 rounded"}`}>
                 <source src={source} type="video/mp4"/>
                 Your browser does not support HTML video.
             </video>
-        )
-    }
-    else
-    {
-        return (
-            <br/>
-        )
-    }
+        </div>
+    )
 }
 
 export function swapImageFeature(imageSwap, imagesList)
@@ -176,9 +177,7 @@ export default function Animal(props) {
                             <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
                                 <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" className={`${"rounded"}`}/>
                             </div>
-                            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                                { hasVideo(props.video, props.id) }
-                            </div>
+                            { hasVideo(props.video, props.id) }
                         </div>
                         <div className={`${"row"}`}>
                             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
