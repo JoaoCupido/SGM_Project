@@ -12,7 +12,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
-import path from 'path'
+import path from 'path';
 
 export async function getStaticProps({params}) {
     const filePath = path.join(process.cwd(), 'animalsData.json');
@@ -35,11 +35,16 @@ export async function getStaticProps({params}) {
 }
 
 export async function getStaticPaths() {
-    const filePath = path.join(process.cwd(), 'allAnimals.json');
+    const filePath = path.join(process.cwd(), 'animalsData.json');
     const jsonData = await fsPromises.readFile(filePath);
     const objectData = JSON.parse(jsonData);
 
-    const paths = objectData.map(animal => {
+    const arrayAnimalId = [];
+    for (let j = 0; j < Object.keys(objectData.animals).length; j++) {
+        arrayAnimalId.push((objectData.animals)[j].id);
+    }
+
+    const paths = arrayAnimalId.map(animal => {
         return { params: { id: animal }}
     })
 
@@ -49,28 +54,7 @@ export async function getStaticPaths() {
     };
 }
 
-const onSceneReady = (scene) => {
-    scene.createDefaultCamera(true);
 
-    SceneLoader.ShowLoadingScreen = false;
-    SceneLoader.Append(
-        "/models/",
-        "dog.babylon",
-        scene,
-        (meshes) => {
-            scene.activeCamera = meshes.cameras[1];
-            scene.activeCamera.attachControl(false);
-            scene.createDefaultLight(true);
-        }
-    );
-
-    return scene;
-};
-
-/**
- * Will run on every frame render.
- */
-const onRender = (scene) => {};
 
 export function hasVideo(video, animalId)
 {
@@ -126,6 +110,35 @@ export function swapImageFeature(imageSwap, imagesList)
 }
 
 export default function Animal(props) {
+    const onSceneReady = (scene) => {
+        scene.createDefaultCamera(true);
+
+        const modelName = props.id + ".babylon";
+        SceneLoader.ShowLoadingScreen = false;
+        SceneLoader.Append(
+            "/models/",
+            modelName,
+            scene,
+            (meshes) => {
+                scene.activeCamera = meshes.cameras[1];
+                scene.activeCamera.attachControl(false);
+                scene.createDefaultLight(true);
+
+                const hdrTexture = new CubeTexture(props.environment, scene);
+                scene.createDefaultSkybox(hdrTexture, true, 10000);
+            }
+        );
+
+        return scene;
+    };
+
+    /**
+     * Will run on every frame render.
+     */
+    const onRender = (scene) => {};
+
+
+
     const { content } = "Characteristics of " + props.name;
     return (
         <div className={styles.container}>

@@ -8,18 +8,18 @@
       "diet": "Omnivorous",
       "tamed": "Domestic",
       "habitat": "Land",
-      "locations": "DEBUG",
+      "locations": "All continents, except Antarctica",
       "fun_fact": "Their sense of smell is at least 40x better than ours!",
       "first_image" : [
         {
           "imagelink": "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg",
-          "alt": "White Shorthaired Dog In Green Field"
+          "alt": "White Shorthaired Dog In Green Field."
         }
       ],
       "second_image" : [
         {
           "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg",
-          "alt": "Closeup Photo Of Brown And Black Dog's Face"
+          "alt": "Closeup Photo Of Brown And Black Dog's Face."
         }
       ],
       "images" : [
@@ -36,8 +36,7 @@
           "alt": "A Golden Retriever standing in a river, gently playing3."
         }
       ],
-      "model": null,
-      "environment": null,
+      "environment": "/scene/GardenHouseBackground.env",
       "video": true,
       "imageSwap": true
     },
@@ -69,8 +68,7 @@
           "alt": "Portrait of a Abyssinian Cat."
         }
       ],
-      "model": null,
-      "environment": null,
+      "environment": "/scene/GardenHouseBackground.env",
       "video": false,
       "imageSwap": false
     }
