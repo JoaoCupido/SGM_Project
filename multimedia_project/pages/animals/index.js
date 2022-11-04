@@ -31,7 +31,7 @@ export default function Animals(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>
+
 
       <main>
 
@@ -50,7 +50,7 @@ export default function Animals(props) {
         </div>
       </main>
 
-      <Footer/>
+
     </div>
   )
 }

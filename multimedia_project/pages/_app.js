@@ -8,6 +8,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 // own css files here
 // import "../css/customcss.css";
 import { ScrollToTop } from 'react-simple-scroll-up'
+import Layout from '../comps/Layout'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -18,7 +19,10 @@ function MyApp({ Component, pageProps }) {
     <div className='App'>
       <ScrollToTop />
     </div>
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+    
   </>)
 }
 

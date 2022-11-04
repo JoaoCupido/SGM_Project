@@ -27,7 +27,6 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -56,7 +55,6 @@ export default function Home(props) {
         </div>
       </main>
 
-      <Footer/>
     </div>
   )
 }
