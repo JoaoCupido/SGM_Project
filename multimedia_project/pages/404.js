@@ -13,7 +13,6 @@ export default function Error() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header/>
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
@@ -31,7 +30,6 @@ export default function Error() {
                 </p>
             </main>
 
-            <Footer/>
         </div>
     )
 }

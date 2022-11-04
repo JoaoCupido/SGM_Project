@@ -155,7 +155,6 @@ export default function Animal(props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header/>
 
             <main>
                 <main className={`${"container"} ${styles["main"]}`}>
@@ -214,7 +213,6 @@ export default function Animal(props) {
                 </p>
             </main>
 
-            <Footer/>
         </div>
     )
 }
