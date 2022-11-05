@@ -24,16 +24,36 @@
       ],
       "images" : [
         {
-          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
-          "alt": "A Golden Retriever standing in a river, gently playing1."
+          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
         },
         {
-          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
-          "alt": "A Golden Retriever standing in a river, gently playing2."
+          "imagelink": "https://images.pexels.com/photos/179221/pexels-photo-179221.jpeg",
+          "alt": "Black and White Short Coat Dog Closeup Photography."
         },
         {
-          "imagelink": "https://api-ninjas.com/images/dogs/golden_retriever.jpg",
-          "alt": "A Golden Retriever standing in a river, gently playing3."
+          "imagelink": "https://images.pexels.com/photos/7752793/pexels-photo-7752793.jpeg",
+          "alt": "Retriever sitting at table with tongue out."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/2480395/pexels-photo-2480395.jpeg",
+          "alt": "Person Standing Near Black Dog on Rug."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/5321441/pexels-photo-5321441.jpeg",
+          "alt": "Adorable little puppy of purebred dog."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/11466479/pexels-photo-11466479.jpeg",
+          "alt": "A Chihuahua Sticking Out Its Tongue."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/5582743/pexels-photo-5582743.jpeg",
+          "alt": "Photo of Brown Dog Running."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/4203280/pexels-photo-4203280.jpeg",
+          "alt": "Brown and White Short Coated Small Dog in Pink Plastic Basket on Green Grass."
         }
       ],
       "environment": "/scene/GardenHouseBackground.env",
