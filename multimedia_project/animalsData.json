@@ -68,29 +68,41 @@
       "diet": "Omnivorous",
       "tamed": "Domestic",
       "habitat": "Land",
-      "locations": "DEBUG",
-      "fun_fact": "DEBUG",
+      "locations": "All continents, except Antarctica",
+      "fun_fact": "A cat was the Mayor of an Alaskan town for 20 years!",
       "first_image" : [
         {
-          "imagelink": "https://api-ninjas.com/images/cats/abyssinian.jpg",
-          "alt": "Portrait of a Abyssinian Cat."
+          "imagelink": "https://images.pexels.com/photos/20787/pexels-photo.jpg",
+          "alt": "Short-coated Gray Cat."
         }
       ],
       "second_image" : [
         {
-          "imagelink": "https://api-ninjas.com/images/cats/abyssinian.jpg",
-          "alt": "Portrait of a Abyssinian Cat."
+          "imagelink": "https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg",
+          "alt": "Close-Up Photography of Sleeping Tabby Cat."
         }
       ],
       "images" : [
         {
-          "imagelink": "https://api-ninjas.com/images/cats/abyssinian.jpg",
-          "alt": "Portrait of a Abyssinian Cat."
+          "imagelink": "https://images.pexels.com/photos/2039887/pexels-photo-2039887.jpeg",
+          "alt": "Woman Holding Tuxedo Cat."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/2646483/pexels-photo-2646483.jpeg",
+          "alt": "Silver Tabby Cat Besides Person's Arm."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/10914517/pexels-photo-10914517.jpeg",
+          "alt": "White Cat on Black Carpet."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/6441473/pexels-photo-6441473.jpeg",
+          "alt": "White Long Fur Cat on Black Background."
         }
       ],
       "environment": "/scene/GardenHouseBackground.env",
-      "video": false,
-      "imageSwap": false
+      "video": true,
+      "imageSwap": true
     }
   ]
 }
