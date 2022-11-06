@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 // add bootstrap icons
 import 'bootstrap-icons/font/bootstrap-icons.css'
 // own css files here
-// import "../css/customcss.css";
+
 import { ScrollToTop } from 'react-simple-scroll-up'
 import Layout from '../comps/Layout'
 

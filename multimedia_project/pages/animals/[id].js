@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
-import Footer from "../../comps/footer";
-import Header from "../../comps/header";
 import Link from 'next/link';
 import React from "react";
 import {SceneLoader} from "babylonjs";
@@ -127,9 +125,7 @@ export default function Animal(props) {
             modelName,
             scene,
             (meshes) => {
-                scene.activeCamera = meshes.cameras[1];
-                scene.activeCamera.attachControl(false);
-                scene.createDefaultLight(true);
+                scene.createDefaultCameraOrLight(true, true, true);
 
                 const hdrTexture = new CubeTexture(props.environment, scene);
                 scene.createDefaultSkybox(hdrTexture, true, 10000);

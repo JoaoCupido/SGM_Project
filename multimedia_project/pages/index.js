@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Footer from "../comps/footer"
-import Header from "../comps/header"
 import Link from 'next/link'
 
 // Fetching data from the JSON file
