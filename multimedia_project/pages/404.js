@@ -18,7 +18,7 @@ export default function Error() {
                 </h1>
 
                 <p className={styles.description}>
-                    Oops! We can't seem to find the page you're looking for!
+                    Oops! We can&apos;t seem to find the page you&apos;re looking for!
                 </p>
 
                 <p>

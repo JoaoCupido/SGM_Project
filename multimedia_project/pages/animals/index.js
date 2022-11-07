@@ -17,6 +17,18 @@ export async function getStaticProps() {
   }
 }
 
+export function objectPosition(animalId)
+{
+    let objectPosition = "object-position-0";
+
+    if(animalId === "dog")
+    {
+        objectPosition = "object-position-1";
+    }
+
+    return objectPosition;
+}
+
 export default function Animals(props) {
   const animals = props.animals;
   animals.sort(sortBy('name','id'));
@@ -39,7 +51,7 @@ export default function Animals(props) {
               <div key={animal.id}>
                 <Link href={animal.url}>
                     <div className={styles.animalCard}>
-                        <Image src={((animal.first_image)[0]).imagelink} alt={((animal.first_image)[0]).alt} width={240} height={240} className={styles.grow}/>
+                        <Image id={objectPosition(animal.id)} src={((animal.first_image)[0]).imagelink} alt={((animal.first_image)[0]).alt} width={240} height={240} className={styles.grow}/>
                         <h2>{animal.name}</h2>
                     </div>
                 </Link>
