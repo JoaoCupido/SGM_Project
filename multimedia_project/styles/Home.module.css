@@ -182,6 +182,7 @@
 .grow {
   transition: 0.5s ease;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .grow:hover {

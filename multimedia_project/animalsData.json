@@ -65,7 +65,7 @@
       "name": "Cat",
       "url": "/animals/cat",
       "type": "Mammal",
-      "diet": "Omnivorous",
+      "diet": "Carnivores",
       "tamed": "Domestic",
       "habitat": "Land",
       "locations": "All continents, except Antarctica",
