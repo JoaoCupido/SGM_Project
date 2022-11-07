@@ -98,6 +98,18 @@
         {
           "imagelink": "https://images.pexels.com/photos/6441473/pexels-photo-6441473.jpeg",
           "alt": "White Long Fur Cat on Black Background."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1566847438217-76e82d383f84",
+          "alt": "Three Assorted-color Kittens."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1577980906127-4ea7faa2c6f0",
+          "alt": "Orange Tabby / Ginger Cat on a Toy Box."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1587896046517-d8154a1e633c",
+          "alt": "White Kitten in Brown Cardboard Box."
         }
       ],
       "environment": "/scene/GardenHouseBackground.env",
