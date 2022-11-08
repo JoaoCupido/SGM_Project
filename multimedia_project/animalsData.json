@@ -115,6 +115,42 @@
       "environment": "/scene/GardenHouseBackground.env",
       "video": true,
       "imageSwap": true
+    },
+    {
+      "id": "horse",
+      "url": "/animals/horse",
+      "name": "Horse",
+      "type": "Mammal",
+      "diet": "Herbivorous",
+      "tamed": "Domestic",
+      "habitat": "Land",
+      "locations": "All continents, except Antarctica",
+      "fun_fact": "Horses can sleep standing up or laying down!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/1543839/pexels-photo-1543839.jpeg",
+          "alt": "Closeup Photo Of Brown Horse."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/629139/pexels-photo-629139.jpeg",
+          "alt": "White Horse In Green Grass Field."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/12722612/pexels-photo-12722612.jpeg",
+          "alt": "Yellow and Black Horse on Prairie Field."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1463748465553-80db1e6ff830",
+          "alt": "Selective Focus Photo of Two Brown Horses."
+        }
+      ],
+      "environment": "/scene/GardenHouseBackground.env",
+      "video": true,
+      "imageSwap": true
     }
   ]
 }
