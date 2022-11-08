@@ -126,6 +126,7 @@ export default function Animal(props) {
             scene,
             (meshes) => {
                 scene.createDefaultCameraOrLight(true, true, true);
+                scene.activeCamera.alpha += Math.PI;
 
                 const hdrTexture = new CubeTexture(props.environment, scene);
                 scene.createDefaultSkybox(hdrTexture, true, 10000);

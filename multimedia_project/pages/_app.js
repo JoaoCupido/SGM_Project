@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <div className='App'>
-      <ScrollToTop />
+      <ScrollToTop bgColor={"rgb(56 229 77 / 75%)"} strokeFillColor={"rgb(253 255 0 / 50%)"} strokeEmptyColor={"rgb(120 122 0 / 85%)"}/>
     </div>
     <Layout>
       <Component {...pageProps} />
