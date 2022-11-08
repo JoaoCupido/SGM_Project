@@ -146,9 +146,13 @@
         {
           "imagelink": "https://images.unsplash.com/photo-1463748465553-80db1e6ff830",
           "alt": "Selective Focus Photo of Two Brown Horses."
+        },
+        {
+          "imagelink": "/images/horse1.jpg",
+          "alt": "Close-Up Shot of a Brown Pony."
         }
       ],
-      "environment": "/scene/GardenHouseBackground.env",
+      "environment": "/scene/FarmHouse.env",
       "video": true,
       "imageSwap": true
     }

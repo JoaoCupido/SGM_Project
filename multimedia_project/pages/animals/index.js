@@ -41,9 +41,8 @@ export default function Animals(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-
       <main>
+
 
 
         <div className={styles.photoGallery}>

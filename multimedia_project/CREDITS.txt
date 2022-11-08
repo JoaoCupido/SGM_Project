@@ -1,0 +1,11 @@
+-- IMAGES --
+images.pexels.com
+images.unsplash.com
+
+-- 3D MODELS --
+"Shiba Inu Dog" (https://skfb.ly/6QYIW) by Ida Faber is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Low Poly Cartoon Cat" (https://skfb.ly/ortQu) by Junglelava is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Horse - Foal - Character Spirit" (https://skfb.ly/orX8C) by Clartoon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+-- 3D ENVIRONMENTS --
+https://polyhaven.com
