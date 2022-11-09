@@ -93,9 +93,11 @@ export function swapImageFeature(imageSwap, imagesList)
                       showStatus={true}
                       showIndicators={false}
                       showThumbs={true}
+                      infiniteLoop={true}
+                      useKeyboardArrows={true}
                       autoPlay={false}
                       transitionTime={500}
-                      swipeable={false}
+                      swipeable={true}
                       emulateTouch={true}>
                 {imagesList.map(image =>
                     <div>
