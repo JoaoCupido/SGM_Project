@@ -1,7 +1,12 @@
-#object-position-0 {
+.object-position-default {
+    object-fit: cover;
     object-position: 50% 50%;
 }
 
-#object-position-1 {
-    object-position: 10% 50%;
+#object-position-dog {
+    object-position: 0 50%;
+}
+
+#object-position-cat {
+    object-position: 50% 10%;
 }

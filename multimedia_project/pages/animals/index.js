@@ -19,14 +19,11 @@ export async function getStaticProps() {
 
 export function objectPosition(animalId)
 {
-    let objectPosition = "object-position-0";
-
-    if(animalId === "dog")
+    if(animalId === "dog" || animalId === "cat")
     {
-        objectPosition = "object-position-1";
+        return "object-position-" + animalId;
     }
-
-    return objectPosition;
+    return "object-position-default";
 }
 
 export default function Animals(props) {
@@ -45,13 +42,15 @@ export default function Animals(props) {
 
 
 
-        <div className={styles.photoGallery}>
+        <div className="row">
           {animals.map(animal =>
-              <div key={animal.id}>
+              <div key={animal.id} className="col-sm-2 pt-2 pb-2 pl-2 pr-2">
                 <Link href={animal.url}>
-                    <div className={styles.animalCard}>
-                        <Image id={objectPosition(animal.id)} src={((animal.first_image)[0]).imagelink} alt={((animal.first_image)[0]).alt} width={240} height={240} className={styles.grow}/>
-                        <h2>{animal.name}</h2>
+                    <div className={`${"card text-center"} ${styles["animalCard"]}`}>
+                        <Image className="card-img-top object-position-default" id={"object-position-" + animal.id} src={((animal.first_image)[0]).imagelink} alt={((animal.first_image)[0]).alt} width={240} height={240}/>
+                        <div className="card-body">
+                            <h2 className="card-title">{animal.name}</h2>
+                        </div>
                     </div>
                 </Link>
               </div>
