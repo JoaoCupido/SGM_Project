@@ -2,7 +2,6 @@
   "animals": [
     {
       "id": "debug",
-      "url": "/animals/debug",
       "name": "Debug",
       "type": "Debug",
       "diet": "Debug",

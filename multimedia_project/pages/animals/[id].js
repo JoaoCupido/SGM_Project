@@ -207,7 +207,7 @@ export default function Animal(props) {
 
                 <p>
                     <Link href="/animals/">
-                        <a className="btn btn-primary" role="button">&larr; Back to Animal List</a>
+                        <a className="btn btn-primary" role="button">&larr; Go Back</a>
                     </Link>
                 </p>
             </main>
