@@ -144,13 +144,24 @@
 .animalCard:active {
   border-color: #FDFF00;
   background-color: #80d225;
-
 }
 
 .animalCard:hover,
 .animalCard:focus,
 .animalCard:active {
   color: #FDFF00;
+}
+
+.filterArea {
+  color: #eaeaea;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  border: 1px solid #eaeaea;
+  background-color: #269a37;
+}
+
+.filterSize {
+   max-width: 40vw;
 }
 
 .card h2 {

@@ -233,28 +233,31 @@ export default function Animals(props) {
 	  <main>
 
 		<div className="pb-20 pt-4">
-            <div className="row">
-                <div className="col-sm-6 pt-2 pb-2 pl-2 pr-2">
-                    <input onChange={event => handleChange("search", event)} type='search' className="form-control rounded-1" placeholder='Search animal...'/>
+            <div className={`${"rounded-2 pt-3 pb-6"} ${styles["filterArea"]}`}>
+                <h1 className="justify-content-around pl-2"><i className={`${"bi bi-filter"} ${styles["i"]}`}></i>Filter:</h1>
+                <div className="row justify-content-around">
+                    <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
+                        <input onChange={event => handleChange("search", event)} type='search' className="form-control rounded-1" placeholder='Search animal...'/>
+                    </div>
+                    <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
+                        { dropdownFilter(getArrayFilterByType(animalsDup), "type", handleChange, false) }
+                    </div>
                 </div>
-                <div className="col-sm-6 pt-2 pb-2 pl-2 pr-2">
-                    { dropdownFilter(getArrayFilterByType(animalsDup), "type", handleChange, false) }
+                <div className="row justify-content-around">
+                    <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
+                        { dropdownFilter(getArrayFilterByHabitat(), "habitat", handleChange, true) }
+                    </div>
+                    <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
+                        { dropdownFilter(getArrayFilterByDiet(animalsDup), "diet", handleChange, false) }
+                    </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-6 pt-2 pb-2 pl-2 pr-2">
-                    { dropdownFilter(getArrayFilterByHabitat(), "habitat", handleChange, true) }
-                </div>
-                <div className="col-sm-6 pt-2 pb-2 pl-2 pr-2">
-                    { dropdownFilter(getArrayFilterByDiet(animalsDup), "diet", handleChange, false) }
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-6 pt-2 pb-2 pl-2 pr-2">
-                    { dropdownFilter(getArrayFilterByLocation(), "location", handleChange, true) }
-                </div>
-                <div className="col-sm-6 pt-2 pb-2 pl-2 pr-2">
-                    { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false) }
+                <div className="row justify-content-around">
+                    <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
+                        { dropdownFilter(getArrayFilterByLocation(), "location", handleChange, true) }
+                    </div>
+                    <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
+                        { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false) }
+                    </div>
                 </div>
             </div>
 		</div>
