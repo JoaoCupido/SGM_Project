@@ -147,6 +147,14 @@
         {
           "imagelink": "/images/horse1.jpg",
           "alt": "Close-Up Shot of a Brown Pony."
+        },
+        {
+          "imagelink": "/images/horse2.jpg",
+          "alt": "Close-Up Shot of a Horse next to a Foal."
+        },
+        {
+          "imagelink": "/images/horse3.jpg",
+          "alt": "Foal Lying Down on the Grass."
         }
       ],
       "environment": "/scene/FarmHouse.env",
