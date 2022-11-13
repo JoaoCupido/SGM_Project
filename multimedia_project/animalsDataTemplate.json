@@ -6,8 +6,8 @@
       "type": "Debug",
       "diet": "Debug",
       "tamed": "Debug",
-      "habitat": "Debug",
-      "locations": "Debug, debugging",
+      "habitat": ["Air", "Land", "Sea"],
+      "locations": ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"],
       "fun_fact": "Debug!",
       "first_image" : [
         {

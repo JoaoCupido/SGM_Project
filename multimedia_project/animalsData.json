@@ -6,8 +6,8 @@
       "type": "Mammal",
       "diet": "Omnivorous",
       "tamed": "Domestic",
-      "habitat": "Land",
-      "locations": "All continents, except Antarctica",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
       "fun_fact": "Their sense of smell is at least 40x better than ours!",
       "first_image" : [
         {
@@ -65,8 +65,8 @@
       "type": "Mammal",
       "diet": "Carnivores",
       "tamed": "Domestic",
-      "habitat": "Land",
-      "locations": "All continents, except Antarctica",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
       "fun_fact": "A cat was the Mayor of an Alaskan town for 20 years!",
       "first_image" : [
         {
@@ -120,8 +120,8 @@
       "type": "Mammal",
       "diet": "Herbivorous",
       "tamed": "Domestic",
-      "habitat": "Land",
-      "locations": "All continents, except Antarctica",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
       "fun_fact": "Horses can sleep standing up or laying down!",
       "first_image" : [
         {

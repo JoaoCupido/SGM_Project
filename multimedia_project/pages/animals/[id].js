@@ -182,8 +182,8 @@ export default function Animal(props) {
                     <div className={`${"row"}`}>
                         <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
                             <p className={`${styles["descriptionAnimal"]}`}>
-                                - Type of habitat: {props.habitat}<br/>
-                                - Locations: {props.locations}<br/><br/>
+                                - Type of habitat: {(props.habitat.toString()).replace(/,/g, ', ')}<br/>
+                                - Locations: {(props.locations.toString()).replace(/,/g, ', ')}<br/><br/>
                                 Fun Fact!<br/>{props.fun_fact}
                             </p>
                         </div>
