@@ -67,7 +67,7 @@
       "tamed": "Domestic",
       "habitat": ["Land"],
       "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
-      "fun_fact": "A cat was the Mayor of an Alaskan town for 20 years!",
+      "fun_fact": "Cats can jump 5 times their height!",
       "first_image" : [
         {
           "imagelink": "https://images.pexels.com/photos/20787/pexels-photo.jpg",
@@ -155,6 +155,41 @@
         {
           "imagelink": "/images/horse3.jpg",
           "alt": "Foal Lying Down on the Grass."
+        }
+      ],
+      "environment": "/scene/FarmHouse.env",
+      "video": true,
+      "imageSwap": true
+    },
+    {
+      "id": "turtle",
+      "name": "Turtle",
+      "type": "Reptile",
+      "diet": "Omnivorous",
+      "tamed": "Wild",
+      "habitat": ["Land", "Sea"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Turtles don't have teeth!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/68744/loggerhead-turtle-sea-ocean-water-68744.jpeg",
+          "alt": "Gray And Green Turtle Swimming In Water."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2613148/pexels-photo-2613148.jpeg",
+          "alt": "Closeup Photo Of Orange Turtle."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
         }
       ],
       "environment": "/scene/FarmHouse.env",
