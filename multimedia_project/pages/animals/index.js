@@ -169,11 +169,11 @@ export default function Animals(props) {
             handleChangeSearch(event);
         } else if (selector === "type") {
             handleChangeType(event);
-        } else if (selector === "habitat") {
+        } else if (selector === "habitats") {
             handleChangeHabitat(event);
         } else if (selector === "diet") {
             handleChangeDiet(event);
-        } else if (selector === "location") {
+        } else if (selector === "locations") {
             handleChangeLocation(event);
         } else if (selector === "tame") {
             handleChangeTame(event);
@@ -266,7 +266,7 @@ export default function Animals(props) {
                 </div>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByHabitat(), "habitat", handleChange, true, false, tameQuery) }
+                        { dropdownFilter(getArrayFilterByHabitat(), "habitats", handleChange, true, false, tameQuery) }
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
                         { dropdownFilter(getArrayFilterByDiet(animalsDup), "diet", handleChange, false, false, tameQuery) }
@@ -274,7 +274,7 @@ export default function Animals(props) {
                 </div>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByLocation(), "location", handleChange, true, false, tameQuery) }
+                        { dropdownFilter(getArrayFilterByLocation(), "locations", handleChange, true, false, tameQuery) }
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
                         { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false, true, tameQuery) }
