@@ -30,8 +30,7 @@
 
 .title a,
 .card:hover,
-.card:focus,
-.card:active {
+.card:focus {
   color: #FDFF00;
 }
 
@@ -128,12 +127,15 @@
 
 .card:hover,
 .card:focus,
-.card:active,
 .animalCard:hover,
-.animalCard:focus,
-.animalCard:active {
+.animalCard:focus {
   border-color: #FDFF00;
   background-color: #80d225;
+}
+
+.card:active,
+.animalCard:active {
+  background-color: #269a37;
 }
 
 .animalCard:hover,

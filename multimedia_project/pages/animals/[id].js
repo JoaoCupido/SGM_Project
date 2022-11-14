@@ -138,13 +138,6 @@ export default function Animal(props) {
         return scene;
     };
 
-    /**
-     * Will run on every frame render.
-     */
-    const onRender = (scene) => {};
-
-
-
     const { content } = "Characteristics of " + props.name;
     return (
         <div className={styles.container}>
@@ -193,7 +186,7 @@ export default function Animal(props) {
                     </div>
                     <div className={`${"row"}`}>
                         <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
-                            <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" className={`${"rounded"}`}/>
+                            <BabylonScene antialias onSceneReady={onSceneReady} id="my-canvas" className={`${"rounded"}`}/>
                         </div>
                         { hasVideo(props.video, props.id) }
                     </div>

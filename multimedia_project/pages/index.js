@@ -40,7 +40,7 @@ export default function Home(props) {
         <div className={styles.grid}>
           {types.map(type =>
             <div key={type.id}>
-              <Link href={type.url}>
+              <Link href={{ pathname: type.url, query: type.query }}>
                 <div className={styles.card}>
                   <h2>{type.name} &rarr;</h2>
                   <p>

@@ -4,6 +4,7 @@ import styles from '../../styles/Home.module.css'
 import Link from 'next/link';
 import sortBy from 'sort-by';
 import Select from 'react-select';
+import { useRouter } from 'next/router'
 
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
@@ -19,31 +20,51 @@ export async function getStaticProps() {
   }
 }
 
-export function dropdownFilter(arrayData, dataSelected, handleChange, isMulti)
+export function dropdownFilter(arrayData, dataSelected, handleChange, isMulti, isTamedDropdown, tameQuery)
 {
+    const customStylesArrow = {
+        dropdownIndicator: base => ({
+            ...base,
+            color: "grey" // Custom colour
+        })
+    };
+
+    let hasDefaultValue = [];
+    if(isTamedDropdown)
+    {
+        for(let i = 0; i < arrayData.length; i++) {
+            hasDefaultValue = tameQuery === arrayData[i].value ? [arrayData[i]] : hasDefaultValue;
+        }
+    }
+
     return (
         <Select
             name={dataSelected}
             options={arrayData}
             isMulti={isMulti}
             placeholder={<div>Select {dataSelected}...</div>}
+            defaultValue={hasDefaultValue}
             isClearable="true"
             className="basic-select"
             classNamePrefix="select"
             onChange={event => handleChange(dataSelected, event)}
+            styles={customStylesArrow}
         />
     )
 }
 
 export default function Animals(props) {
-  const [query, setQuery] = useState({
-      search: '',
-      type: '',
-      habitat: [],
-      diet: '',
-      location: [],
-      tame: ''
-  });
+    const router = useRouter();
+    let tameQuery = (router.query.tame !== undefined && router.query.tame !== "") ? router.query.tame : '';
+
+    const [query, setQuery] = useState({
+        search: '',
+        type: '',
+        habitat: [],
+        diet: '',
+        location: [],
+        tame: tameQuery
+    });
 
   const searchFilter = (animalsList) => {
 	  return animalsList.filter(
@@ -234,29 +255,29 @@ export default function Animals(props) {
 
 		<div className="pb-20 pt-4">
             <div className={`${"rounded-2 pt-3 pb-6"} ${styles["filterArea"]}`}>
-                <h1 className="justify-content-around pl-2"><i className={`${"bi bi-filter"} ${styles["i"]}`}></i>Filter:</h1>
+                <h1 className="justify-content-around pl-2"><i className={`${"bi bi-filter"} ${styles["i"]}`}></i>Filter{" " + query.tame} Animals:</h1>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        <input onChange={event => handleChange("search", event)} type='search' className="form-control rounded-1" placeholder='Search animal...'/>
+                        <input id="inputSearchId" onChange={event => handleChange("search", event)} type='search' className="form-control rounded-1" placeholder='Search animal...'/>
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByType(animalsDup), "type", handleChange, false) }
+                        { dropdownFilter(getArrayFilterByType(animalsDup), "type", handleChange, false, false, tameQuery) }
                     </div>
                 </div>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByHabitat(), "habitat", handleChange, true) }
+                        { dropdownFilter(getArrayFilterByHabitat(), "habitat", handleChange, true, false, tameQuery) }
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByDiet(animalsDup), "diet", handleChange, false) }
+                        { dropdownFilter(getArrayFilterByDiet(animalsDup), "diet", handleChange, false, false, tameQuery) }
                     </div>
                 </div>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByLocation(), "location", handleChange, true) }
+                        { dropdownFilter(getArrayFilterByLocation(), "location", handleChange, true, false, tameQuery) }
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false) }
+                        { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false, true, tameQuery) }
                     </div>
                 </div>
             </div>
