@@ -37,12 +37,21 @@ export function dropdownFilter(arrayData, dataSelected, handleChange, isMulti, i
         }
     }
 
+    let placeholderString = ''
+    placeholderString = dataSelected.includes('sort') ? placeholderString + 'Sort ' : placeholderString + 'Select ';
+    placeholderString = dataSelected.includes('Prop') ? placeholderString + 'by property' : placeholderString;
+    placeholderString = dataSelected.includes('Order') ? placeholderString + 'by order' : placeholderString;
+    placeholderString = !dataSelected.includes('Order')
+                        && !dataSelected.includes('Prop')
+                        && !dataSelected.includes('sort') ? placeholderString + dataSelected : placeholderString;
+    placeholderString = placeholderString + "..."
+
     return (
         <Select
             name={dataSelected}
             options={arrayData}
             isMulti={isMulti}
-            placeholder={<div>Select {dataSelected}...</div>}
+            placeholder={<div>{placeholderString}</div>}
             defaultValue={hasDefaultValue}
             isClearable="true"
             className="basic-select"
@@ -63,7 +72,9 @@ export default function Animals(props) {
         habitat: [],
         diet: '',
         location: [],
-        tame: tameQuery
+        tame: tameQuery,
+        sortProp: 'name',
+        sortOrder: 'AZ'
     });
 
   const searchFilter = (animalsList) => {
@@ -153,8 +164,24 @@ export default function Animals(props) {
         )
     }
 
+    const getArraySortByProp = () => {
+        return [
+            {value: "name", label: "Name"},
+            {value: "type", label: "Type"},
+            {value: "diet", label: "Diet"},
+            {value: "tamed", label: "Tame"}
+        ];
+    }
+    const getArraySortByOrder = () => {
+        return [
+            {value: "AZ", label: "A-Z"},
+            {value: "ZA", label: "Z-A"}
+        ];
+    }
+
   let animals = props.animals;
-  animals.sort(sortBy('name','id'));
+  const orderPrimary = query.sortOrder === 'ZA' ? '-' + query.sortProp : query.sortProp;
+  animals.sort(sortBy(orderPrimary,'id'));
   let animalsDup = [...animals];
   animals = searchFilter(animals);
   animals = typeFilter(animals);
@@ -162,7 +189,6 @@ export default function Animals(props) {
   animals = dietFilter(animals);
   animals = locationFilter(animals);
   animals = tameFilter(animals);
-
 
     const handleChange = (selector, event) => {
         if (selector === "search") {
@@ -177,6 +203,10 @@ export default function Animals(props) {
             handleChangeLocation(event);
         } else if (selector === "tame") {
             handleChangeTame(event);
+        } else if (selector === "sortProp") {
+            handleChangeSortProp(event);
+        } else if (selector === "sortOrder") {
+            handleChangeSortOrder(event);
         }
     }
 
@@ -242,6 +272,26 @@ export default function Animals(props) {
             setQuery({...query, tame: ''})
         }
     }
+    const handleChangeSortProp = (e) => {
+        //console.log(e)
+        if(e !== null) {
+            setQuery({...query, sortProp: e.value})
+        }
+        else
+        {
+            setQuery({...query, sortProp: 'name'})
+        }
+    }
+    const handleChangeSortOrder = (e) => {
+        //console.log(e)
+        if(e !== null) {
+            setQuery({...query, sortOrder: e.value})
+        }
+        else
+        {
+            setQuery({...query, sortOrder: 'AZ'})
+        }
+    }
 
   return (
 	<div className={styles.container}>
@@ -278,6 +328,15 @@ export default function Animals(props) {
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
                         { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false, true, tameQuery) }
+                    </div>
+                </div>
+                <h1 className="justify-content-around pl-2"><i className={`${"bi bi-sort-alpha-down"} ${styles["i"]}`}></i>Sort Animals:</h1>
+                <div className="row justify-content-around">
+                    <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
+                        { dropdownFilter(getArraySortByProp(), "sortProp", handleChange, false, false, tameQuery) }
+                    </div>
+                    <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
+                        { dropdownFilter(getArraySortByOrder(), "sortOrder", handleChange, false, false, tameQuery) }
                     </div>
                 </div>
             </div>
