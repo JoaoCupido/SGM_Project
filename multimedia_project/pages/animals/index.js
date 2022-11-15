@@ -181,6 +181,7 @@ export default function Animals(props) {
 
   let animals = props.animals;
   const orderPrimary = query.sortOrder === 'ZA' ? '-' + query.sortProp : query.sortProp;
+  const iconOrder = query.sortOrder === 'ZA' ? "bi bi-sort-alpha-up" : "bi bi-sort-alpha-down";
   animals.sort(sortBy(orderPrimary,'id'));
   let animalsDup = [...animals];
   animals = searchFilter(animals);
@@ -330,7 +331,7 @@ export default function Animals(props) {
                         { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false, true, tameQuery) }
                     </div>
                 </div>
-                <h1 className="justify-content-around pl-2"><i className={`${"bi bi-sort-alpha-down"} ${styles["i"]}`}></i>Sort Animals:</h1>
+                <h1 className="justify-content-around pl-2"><i className={`${iconOrder} ${styles["i"]}`}></i>Sort Animals:</h1>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
                         { dropdownFilter(getArraySortByProp(), "sortProp", handleChange, false, false, tameQuery) }
