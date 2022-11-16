@@ -2,7 +2,8 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Link from 'next/link';
 import React from "react";
-import {SceneLoader, CubeTexture} from "babylonjs";
+import {CubeTexture, SceneLoader} from "@babylonjs/core";
+import '@babylonjs/loaders/glTF';
 import BabylonScene from "../../comps/BabylonScene";
 import {Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -120,7 +121,7 @@ export default function Animal(props) {
     const onSceneReady = (scene) => {
         scene.createDefaultCamera(true);
 
-        const modelName = props.id + ".babylon";
+        const modelName = props.id + ".glb";
         SceneLoader.ShowLoadingScreen = false;
         SceneLoader.Append(
             "/models/",
@@ -132,11 +133,15 @@ export default function Animal(props) {
 
                 const hdrTexture = new CubeTexture(props.environment, scene);
                 scene.createDefaultSkybox(hdrTexture, true, 10000);
+
+                //scene.createDefaultEnvironment();
             }
         );
 
         return scene;
     };
+
+    const onRender = (scene) => {};
 
     const { content } = "Characteristics of " + props.name;
     return (
@@ -186,7 +191,7 @@ export default function Animal(props) {
                     </div>
                     <div className={`${"row"}`}>
                         <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
-                            <BabylonScene antialias onSceneReady={onSceneReady} id="my-canvas" className={`${"rounded"}`}/>
+                            <BabylonScene antialias adaptToDeviceRatio onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" className={`${"rounded"}`}/>
                         </div>
                         { hasVideo(props.video, props.id) }
                     </div>

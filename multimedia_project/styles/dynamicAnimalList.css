@@ -14,3 +14,7 @@
 #object-position-turtle {
     object-position: 50% 100%;
 }
+
+#object-position-penguin {
+    object-position: 100% 0;
+}

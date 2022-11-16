@@ -227,6 +227,41 @@
       "environment": "/scene/Beach.env",
       "video": true,
       "imageSwap": true
+    },
+    {
+      "id": "penguin",
+      "name": "Penguin",
+      "type": "Bird",
+      "diet": "Carnivore",
+      "tamed": "Wild",
+      "habitat": ["Land", "Sea"],
+      "locations": ["Africa", "Antarctica", "Australia", "South America"],
+      "fun_fact": "Penguins huddle for warmth!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2078480/pexels-photo-2078480.jpeg",
+          "alt": "White Shorthaired Dog In Green Field."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/52509/penguins-emperor-antarctic-life-52509.jpeg",
+          "alt": "Penguins Standing on the Snow during Daytime."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+        }
+      ],
+      "environment": "/scene/SnowLand.env",
+      "video": true,
+      "imageSwap": true
     }
   ]
 }

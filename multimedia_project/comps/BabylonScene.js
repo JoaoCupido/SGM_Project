@@ -1,4 +1,4 @@
-import { Engine, Scene } from "babylonjs";
+import { Engine, Scene } from "@babylonjs/core";
 import React, { useEffect, useRef, useState } from "react";
 
 const BabylonScene = (props) => {
