@@ -98,7 +98,8 @@ export function swapImageFeature(imageSwap, imagesList)
                       autoPlay={false}
                       transitionTime={500}
                       swipeable={true}
-                      emulateTouch={true}>
+                      emulateTouch={true}
+                      dynamicHeight={true}>
                 {imagesList.map(image =>
                     <div>
                         <img src={image.imagelink} alt={image.alt} className={`${"rounded"}`}/>
