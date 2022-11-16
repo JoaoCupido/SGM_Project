@@ -20,7 +20,7 @@ export async function getStaticProps() {
   }
 }
 
-export function dropdownFilter(arrayData, dataSelected, handleChange, isMulti, isTamedDropdown, tameQuery)
+export function dropdownFilter(arrayData, dataSelected, handleChange, isMulti, isTamedDropdown, tameQuery, isSorter)
 {
     const customStylesArrow = {
         dropdownIndicator: base => ({
@@ -35,6 +35,10 @@ export function dropdownFilter(arrayData, dataSelected, handleChange, isMulti, i
         for(let i = 0; i < arrayData.length; i++) {
             hasDefaultValue = tameQuery === arrayData[i].value ? [arrayData[i]] : hasDefaultValue;
         }
+    }
+    if(isSorter)
+    {
+        hasDefaultValue = [arrayData[0]];
     }
 
     let placeholderString = ''
@@ -312,32 +316,32 @@ export default function Animals(props) {
                         <input id="inputSearchId" onChange={event => handleChange("search", event)} type='search' className="form-control rounded-1" placeholder='Search animal...'/>
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByType(animalsDup), "type", handleChange, false, false, tameQuery) }
+                        { dropdownFilter(getArrayFilterByType(animalsDup), "type", handleChange, false, false, tameQuery, false) }
                     </div>
                 </div>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByHabitat(), "habitats", handleChange, true, false, tameQuery) }
+                        { dropdownFilter(getArrayFilterByHabitat(), "habitats", handleChange, true, false, tameQuery, false) }
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByDiet(animalsDup), "diet", handleChange, false, false, tameQuery) }
+                        { dropdownFilter(getArrayFilterByDiet(animalsDup), "diet", handleChange, false, false, tameQuery, false) }
                     </div>
                 </div>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByLocation(), "locations", handleChange, true, false, tameQuery) }
+                        { dropdownFilter(getArrayFilterByLocation(), "locations", handleChange, true, false, tameQuery, false) }
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false, true, tameQuery) }
+                        { dropdownFilter(getArrayFilterByTame(animalsDup), "tame", handleChange, false, true, tameQuery, false) }
                     </div>
                 </div>
                 <h1 className="justify-content-around pl-2"><i className={`${iconOrder} ${styles["i"]}`}></i>Sort Animals:</h1>
                 <div className="row justify-content-around">
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArraySortByProp(), "sortProp", handleChange, false, false, tameQuery) }
+                        { dropdownFilter(getArraySortByProp(), "sortProp", handleChange, false, false, tameQuery, true) }
                     </div>
                     <div className={`${"col-sm-6 pt-2 pb-2 pl-2 pr-2"} ${styles["filterSize"]}`}>
-                        { dropdownFilter(getArraySortByOrder(), "sortOrder", handleChange, false, false, tameQuery) }
+                        { dropdownFilter(getArraySortByOrder(), "sortOrder", handleChange, false, false, tameQuery, true) }
                     </div>
                 </div>
             </div>

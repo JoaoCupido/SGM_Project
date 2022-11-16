@@ -2,8 +2,7 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Link from 'next/link';
 import React from "react";
-import {SceneLoader} from "babylonjs";
-import {CubeTexture} from "@babylonjs/core";
+import {SceneLoader, CubeTexture} from "babylonjs";
 import BabylonScene from "../../comps/BabylonScene";
 import {Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
