@@ -18,3 +18,11 @@
 #object-position-penguin {
     object-position: 100% 0;
 }
+
+#object-position-parrot {
+    object-position: 100% 50%;
+}
+
+#object-position-dolphin {
+    object-position: 25% 20%;
+}

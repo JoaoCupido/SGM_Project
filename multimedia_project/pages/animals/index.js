@@ -105,7 +105,7 @@ export default function Animals(props) {
     }
 
     const getArrayFilterByHabitat = () => {
-        return [{value: "Air", label: "Air"}, {value: "Land", label: "Land"}, {value: "Sea", label: "Sea"}];
+        return [{value: "Air", label: "Air"}, {value: "Land", label: "Land"}, {value: "Water", label: "Water"}];
     }
     const habitatFilter = (animalsList) => {
         return animalsList.filter(
