@@ -321,6 +321,124 @@
       "environment": "/scene/Dirt.env",
       "video": false,
       "imageSwap": true
+    },
+    {
+      "id": "parrot",
+      "name": "Parrot",
+      "type": "Aves",
+      "diet": "Omnivores",
+      "tamed": "Wild",
+      "habitat": ["Forrest"],
+      "locations": ["Southern Hemisphere","northern Mexico","Australia","South America","Central America"],
+      "fun_fact": "Many species are monogamous and spend their lives with only one mate.",
+      "first_image" : [
+        {
+          "imagelink": "/images/parrots1.jpeg",
+          "alt": "A group of parrots."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "/images/parrots2.jpg",
+          "alt": "Couple of parrots ."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "/images/parrots3.jpg",
+          "alt": "Red parrot."
+        },
+        {
+          "imagelink": "/images/parrots4.jpg",
+          "alt": "Parrot eating."
+        },
+        {
+          "imagelink": "/images/parrots5.jpg",
+          "alt": "Yellow and blue parrot."
+        },
+        {
+          "imagelink": "/images/parrots6.jpg",
+          "alt": "Parrots cracking a nut."
+        },
+        {
+          "imagelink": "/images/parrots7.jpg",
+          "alt": "A colorful parrot."
+        },
+        {
+          "imagelink": "/images/parrots8.jpg",
+          "alt": "A grey parrot."
+        },
+        {
+          "imagelink": "/images/parrots9.jpg",
+          "alt": "Blue parrot."
+        },
+	      {
+          "imagelink": "/images/parrots10.jpg",
+          "alt": "Two parrots playing."
+        },
+	      {
+          "imagelink": "/images/parrots11.jpg",
+          "alt": "White parrot."
+        }
+      ],
+      "environment": "/scene/FarmHouse.env",
+      "video": true,
+      "imageSwap": true
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "type": "Mammal",
+      "diet": "Carnivore",
+      "tamed": "Wild",
+      "habitat": ["Ocean"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Dolphins have the ability to recognise themselves in a mirror!",
+      "first_image" : [
+        {
+          "imagelink": "/images/dolphin1.jpg",
+          "alt": "Closeup Photo Of Dolphin."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "/images/dolphin2.jpg",
+          "alt": "Dolphins putting the heads above water ."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "/images/dolphin3.jpg",
+          "alt": "Dolphins breaching above water."
+        },
+        {
+          "imagelink": "/images/dolphin4.jpg",
+          "alt": "Dolphin couple."
+        },
+        {
+          "imagelink": "/images/dolphin5.jpg",
+          "alt": "Dolphin on the open ocean."
+        },
+        {
+          "imagelink": "/images/dolphin6.jpg",
+          "alt": "Group of dolphins."
+        },
+        {
+          "imagelink": "/images/dolphin7.jpg",
+          "alt": "A group of dolphins submerging."
+        },
+        {
+          "imagelink": "/images/dolphin8.jpg",
+          "alt": "A group of dolphins breaching."
+        },
+        {
+          "imagelink": "/images/dolphin9.jpg",
+          "alt": "Dolphins doing tricks."
+        }
+      ],
+      "environment": "/scene/FarmHouse.env",
+      "video": true,
+      "imageSwap": true
     }
   ]
 }
