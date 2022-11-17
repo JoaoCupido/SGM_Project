@@ -251,12 +251,36 @@
       ],
       "images" : [
         {
-          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
-          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+          "imagelink": "/images/penguin1.jpg",
+          "alt": "Photo of a Penguin Walking On Seashore."
         },
         {
-          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
-          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+          "imagelink": "/images/penguin2.jpg",
+          "alt": "Black and White Penguin Walking on Sand."
+        },
+        {
+          "imagelink": "/images/penguin3.jpg",
+          "alt": "Baby Penguin With Their Mom."
+        },
+        {
+          "imagelink": "/images/penguin4.jpg",
+          "alt": "Photo of a Grayscale Penguin."
+        },
+        {
+          "imagelink": "/images/penguin5.jpg",
+          "alt": "Photo of the Penguin's Back."
+        },
+        {
+          "imagelink": "/images/penguin6.jpg",
+          "alt": "A Group of Penguins On Ice."
+        },
+        {
+          "imagelink": "/images/penguin7.jpg",
+          "alt": "A Penguin by the Shore."
+        },
+        {
+          "imagelink": "/images/penguin8.jpg",
+          "alt": "Two Adult Penguins next to their Baby Penguins."
         }
       ],
       "environment": "/scene/SnowLand.env",
