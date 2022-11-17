@@ -55,7 +55,7 @@
           "alt": "Brown and White Short Coated Small Dog in Pink Plastic Basket on Green Grass."
         }
       ],
-      "environment": "/scene/GardenHouseBackground.env",
+      "environment": "/scene/Garden.env",
       "video": true,
       "imageSwap": true
     },
@@ -110,7 +110,7 @@
           "alt": "White Kitten in Brown Cardboard Box."
         }
       ],
-      "environment": "/scene/GardenHouseBackground.env",
+      "environment": "/scene/Garden.env",
       "video": true,
       "imageSwap": true
     },
@@ -165,7 +165,7 @@
           "alt": "Cute Baby Horse on a Field."
         }
       ],
-      "environment": "/scene/FarmHouse.env",
+      "environment": "/scene/Farm.env",
       "video": true,
       "imageSwap": true
     },
@@ -283,7 +283,7 @@
           "alt": "Two Adult Penguins next to their Baby Penguins."
         }
       ],
-      "environment": "/scene/SnowLand.env",
+      "environment": "/scene/Snow.env",
       "video": true,
       "imageSwap": true
     },
@@ -318,7 +318,7 @@
           "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
         }
       ],
-      "environment": "/scene/Beach.env",
+      "environment": "/scene/Dirt.env",
       "video": false,
       "imageSwap": true
     }
