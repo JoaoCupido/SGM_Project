@@ -439,6 +439,61 @@
       "environment": "/scene/FarmHouse.env",
       "video": true,
       "imageSwap": true
+    },
+    {
+      "id": "whale",
+      "name": "Whale",
+      "type": "Mammal",
+      "diet": "Carnivore",
+      "tamed": "Wild",
+      "habitat": ["Ocean"],
+      "locations": ["All oceans"],
+      "fun_fact": "Blue Whales Can Grow More Than 30 meters Long!",
+      "first_image" : [
+        {
+          "imagelink": "/images/whale2.jpg",
+          "alt": "Front view of a whale."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "/images/whale1.jpg",
+          "alt": "Whale jumping out of the water."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "/images/whale3.jpg",
+          "alt": "Whale emerging out of water."
+        },
+        {
+          "imagelink": "/images/whale4.jpg",
+          "alt": "Two whales swiming."
+        },
+        {
+          "imagelink": "/images/whale5.jpg",
+          "alt": "Whale breathing."
+        },
+        {
+          "imagelink": "/images/whale6.jpg",
+          "alt": "Whale emerging out of water."
+        },
+        {
+          "imagelink": "/images/whale7.jpg",
+          "alt": "Whale doing a backflip."
+        },
+        {
+          "imagelink": "/images/whale8.jpg",
+          "alt": "A mother whale and her son."
+        },
+        {
+          "imagelink": "/images/whale9.jpg",
+          "alt": "Two whales submerging."
+        }
+      ],
+      "environment": "/scene/Farm.env",
+      "video": true,
+      "imageSwap": true
     }
   ]
 }
