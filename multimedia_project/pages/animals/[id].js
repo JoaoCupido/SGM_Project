@@ -4,7 +4,6 @@ import Link from 'next/link';
 import React from "react";
 import {CubeTexture, SceneLoader} from "@babylonjs/core";
 import '@babylonjs/loaders/glTF';
-import BabylonScene from "../../comps/BabylonScene";
 import SceneComponent from 'babylonjs-hook';
 import {Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -134,8 +133,6 @@ export default function Animal(props) {
 
                 const hdrTexture = new CubeTexture(props.environment, scene);
                 scene.createDefaultSkybox(hdrTexture, true, 10000);
-
-                //scene.createDefaultEnvironment();
             }
         );
 
@@ -192,7 +189,6 @@ export default function Animal(props) {
                     </div>
                     <div className={`${"row"}`}>
                         <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
-                            {/*<BabylonScene antialias adaptToDeviceRatio onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" className={`${"rounded"}`}/> */}
                             <SceneComponent antialias adaptToDeviceRatio onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" style={{ width: "100%", height: "100%" }} className={`${"rounded"}`}/>
                         </div>
                         { hasVideo(props.video, props.id) }
