@@ -1,6 +1,10 @@
+-- BACKGROUND LAYERS --
+Gamemaker Bundle Asset #1 - Fantasy Side-Scrolling Platformer
+
 -- IMAGES --
 images.pexels.com
 images.unsplash.com
+pixabay.com/photos
 
 -- 3D MODELS --
 "Shiba Inu Dog" (https://skfb.ly/6QYIW) by Ida Faber is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
