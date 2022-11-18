@@ -298,24 +298,32 @@
       "fun_fact": "Tyrannosaurus Rex means 'Tyrant Lizard'!",
       "first_image" : [
         {
-          "imagelink": "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg",
-          "alt": "White Shorthaired Dog In Green Field."
+          "imagelink": "/images/t-rex1.jpg",
+          "alt": "Brown T-Rex Illustration."
         }
       ],
       "second_image" : [
         {
-          "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg",
-          "alt": "Closeup Photo Of Brown And Black Dog's Face."
+          "imagelink": "/images/t-rex2.jpg",
+          "alt": "Green and Black T-Rex Model in a Bamboo Forest."
         }
       ],
       "images" : [
         {
-          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
-          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+          "imagelink": "/images/t-rex3.jpg",
+          "alt": "A Green T-Rex Toy on a Beach"
         },
         {
-          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
-          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+          "imagelink": "/images/t-rex4.jpg",
+          "alt": "Brown T-Rex Toy on a Wooden Table."
+        },
+        {
+          "imagelink": "/images/t-rex5.jpg",
+          "alt": "Green T-Rex Toy on a Round and Wooden Table."
+        },
+        {
+          "imagelink": "/images/t-rex6.jpg",
+          "alt": "Red and Green T-Rex Toy."
         }
       ],
       "environment": "/scene/Dirt.env",
