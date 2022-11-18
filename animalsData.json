@@ -1,0 +1,542 @@
+{
+  "animals": [
+    {
+      "id": "dog",
+      "name": "Dog",
+      "type": "Mammal",
+      "diet": "Omnivore",
+      "tamed": "Domestic",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Their sense of smell is at least 40x better than ours!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg",
+          "alt": "White Shorthaired Dog In Green Field."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg",
+          "alt": "Closeup Photo Of Brown And Black Dog's Face."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/179221/pexels-photo-179221.jpeg",
+          "alt": "Black and White Short Coat Dog Closeup Photography."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/7752793/pexels-photo-7752793.jpeg",
+          "alt": "Retriever sitting at table with tongue out."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/2480395/pexels-photo-2480395.jpeg",
+          "alt": "Person Standing Near Black Dog on Rug."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/5321441/pexels-photo-5321441.jpeg",
+          "alt": "Adorable little puppy of purebred dog."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/11466479/pexels-photo-11466479.jpeg",
+          "alt": "A Chihuahua Sticking Out Its Tongue."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/5582743/pexels-photo-5582743.jpeg",
+          "alt": "Photo of Brown Dog Running."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/4203280/pexels-photo-4203280.jpeg",
+          "alt": "Brown and White Short Coated Small Dog in Pink Plastic Basket on Green Grass."
+        }
+      ],
+      "environment": "/scene/Garden.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "cat",
+      "name": "Cat",
+      "type": "Mammal",
+      "diet": "Carnivore",
+      "tamed": "Domestic",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Cats can jump 5 times their height!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/20787/pexels-photo.jpg",
+          "alt": "Short-coated Gray Cat."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg",
+          "alt": "Close-Up Photography of Sleeping Tabby Cat."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2039887/pexels-photo-2039887.jpeg",
+          "alt": "Woman Holding Tuxedo Cat."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/2646483/pexels-photo-2646483.jpeg",
+          "alt": "Silver Tabby Cat Besides Person's Arm."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/10914517/pexels-photo-10914517.jpeg",
+          "alt": "White Cat on Black Carpet."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/6441473/pexels-photo-6441473.jpeg",
+          "alt": "White Long Fur Cat on Black Background."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1566847438217-76e82d383f84",
+          "alt": "Three Assorted-color Kittens."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1577980906127-4ea7faa2c6f0",
+          "alt": "Orange Tabby / Ginger Cat on a Toy Box."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1587896046517-d8154a1e633c",
+          "alt": "White Kitten in Brown Cardboard Box."
+        }
+      ],
+      "environment": "/scene/Garden.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "horse",
+      "name": "Horse",
+      "type": "Mammal",
+      "diet": "Herbivore",
+      "tamed": "Domestic",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Horses can sleep standing up or laying down!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/1543839/pexels-photo-1543839.jpeg",
+          "alt": "Closeup Photo Of Brown Horse."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/629139/pexels-photo-629139.jpeg",
+          "alt": "White Horse In Green Grass Field."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/12722612/pexels-photo-12722612.jpeg",
+          "alt": "Yellow and Black Horse on Prairie Field."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1463748465553-80db1e6ff830",
+          "alt": "Selective Focus Photo of Two Brown Horses."
+        },
+        {
+          "imagelink": "/images/horse1.jpg",
+          "alt": "Close-Up Shot of a Brown Pony."
+        },
+        {
+          "imagelink": "/images/horse2.jpg",
+          "alt": "Close-Up Shot of a Horse next to a Baby Horse."
+        },
+        {
+          "imagelink": "/images/horse3.jpg",
+          "alt": "Baby Horse Lying Down on the Grass."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/5098968/pexels-photo-5098968.jpeg",
+          "alt": "Photo of a Brown Horse."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/6403445/pexels-photo-6403445.jpeg",
+          "alt": "Cute Baby Horse on a Field."
+        }
+      ],
+      "environment": "/scene/Farm.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "turtle",
+      "name": "Turtle",
+      "type": "Reptile",
+      "diet": "Omnivore",
+      "tamed": "Wild",
+      "habitat": ["Land", "Water"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Turtles don't have teeth!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/68744/loggerhead-turtle-sea-ocean-water-68744.jpeg",
+          "alt": "Gray And Green Turtle Swimming In Water."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2613148/pexels-photo-2613148.jpeg",
+          "alt": "Closeup Photo Of Orange Turtle."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.unsplash.com/photo-1562464334-5eedd52781b2",
+          "alt": "Sea Turtle and School of Fish in Tank."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1588361732075-e5e4a36c0d35",
+          "alt": "Turtle on a Log in a Lake."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/10465645/pexels-photo-10465645.jpeg",
+          "alt": "Turtle on a Log."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/10465705/pexels-photo-10465705.jpeg",
+          "alt": "Turtles on Brown Wooden Log Near Body of Water."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1637551992494-14c6b74bb2cf",
+          "alt": "Baby Turtle on a Sand Beach."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1634850228803-3e5b21a0c29b",
+          "alt": "Turtle Hiding in its Shell."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1637551994168-5d361b32f18a",
+          "alt": "Baby Turtle Reaching to the Sea."
+        },
+        {
+          "imagelink": "https://images.unsplash.com/photo-1644776986545-a3b246aa77a0",
+          "alt": "Black and Yellow Turtle Relaxing."
+        }
+      ],
+      "environment": "/scene/UnderWater-CoralWithLight.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "penguin",
+      "name": "Penguin",
+      "type": "Bird",
+      "diet": "Carnivore",
+      "tamed": "Wild",
+      "habitat": ["Land", "Water"],
+      "locations": ["Africa", "Antarctica", "Australia", "South America"],
+      "fun_fact": "Penguins huddle for warmth!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2078480/pexels-photo-2078480.jpeg",
+          "alt": "Black And White Penguin."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/52509/penguins-emperor-antarctic-life-52509.jpeg",
+          "alt": "Penguins Standing on the Snow during Daytime."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "/images/penguin1.jpg",
+          "alt": "Photo of a Penguin Walking On Seashore."
+        },
+        {
+          "imagelink": "/images/penguin2.jpg",
+          "alt": "Black and White Penguin Walking on Sand."
+        },
+        {
+          "imagelink": "/images/penguin3.jpg",
+          "alt": "Baby Penguin With Their Mom."
+        },
+        {
+          "imagelink": "/images/penguin4.jpg",
+          "alt": "Photo of a Grayscale Penguin."
+        },
+        {
+          "imagelink": "/images/penguin5.jpg",
+          "alt": "Photo of the Penguin's Back."
+        },
+        {
+          "imagelink": "/images/penguin6.jpg",
+          "alt": "A Group of Penguins On Ice."
+        },
+        {
+          "imagelink": "/images/penguin7.jpg",
+          "alt": "A Penguin by the Shore."
+        },
+        {
+          "imagelink": "/images/penguin8.jpg",
+          "alt": "Two Adult Penguins next to their Baby Penguins."
+        }
+      ],
+      "environment": "/scene/Snow.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "t-rex",
+      "name": "T-Rex",
+      "type": "Reptile",
+      "diet": "Carnivore",
+      "tamed": "Prehistoric",
+      "habitat": ["Land"],
+      "locations": ["---"],
+      "fun_fact": "Tyrannosaurus Rex means 'Tyrant Lizard'!",
+      "first_image" : [
+        {
+          "imagelink": "/images/t-rex1.jpg",
+          "alt": "Brown T-Rex Illustration."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "/images/t-rex2.jpg",
+          "alt": "Green and Black T-Rex Model in a Bamboo Forest."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "/images/t-rex3.jpg",
+          "alt": "A Green T-Rex Toy on a Beach"
+        },
+        {
+          "imagelink": "/images/t-rex4.jpg",
+          "alt": "Brown T-Rex Toy on a Wooden Table."
+        },
+        {
+          "imagelink": "/images/t-rex5.jpg",
+          "alt": "Green T-Rex Toy on a Round and Wooden Table."
+        },
+        {
+          "imagelink": "/images/t-rex6.jpg",
+          "alt": "Red and Green T-Rex Toy."
+        }
+      ],
+      "environment": "/scene/Dirt.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "parrot",
+      "name": "Parrot",
+      "type": "Bird",
+      "diet": "Omnivore",
+      "tamed": "Wild",
+      "habitat": ["Africa", "Asia", "Australia", "North America", "South America"],
+      "locations": ["Air"],
+      "fun_fact": "Parrots are incredibly intelligent!",
+      "first_image" : [
+        {
+          "imagelink": "/images/parrots1.jpeg",
+          "alt": "A group of parrots."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "/images/parrots2.jpg",
+          "alt": "A Couple of parrots."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "/images/parrots3.jpg",
+          "alt": "Red parrot."
+        },
+        {
+          "imagelink": "/images/parrots4.jpg",
+          "alt": "Parrot eating."
+        },
+        {
+          "imagelink": "/images/parrots5.jpg",
+          "alt": "Yellow and blue parrot."
+        },
+        {
+          "imagelink": "/images/parrots6.jpg",
+          "alt": "Parrots cracking a nut."
+        },
+        {
+          "imagelink": "/images/parrots7.jpg",
+          "alt": "A colorful parrot."
+        },
+        {
+          "imagelink": "/images/parrots8.jpg",
+          "alt": "A grey parrot."
+        },
+        {
+          "imagelink": "/images/parrots9.jpg",
+          "alt": "Blue parrot."
+        },
+	      {
+          "imagelink": "/images/parrots10.jpg",
+          "alt": "Two parrots playing."
+        },
+	      {
+          "imagelink": "/images/parrots11.jpg",
+          "alt": "White parrot."
+        }
+      ],
+      "environment": "/scene/RainForest.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "type": "Mammal",
+      "diet": "Carnivore",
+      "tamed": "Wild",
+      "habitat": ["Water"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Dolphins are chatty animals!",
+      "first_image" : [
+        {
+          "imagelink": "/images/dolphin1.jpg",
+          "alt": "Closeup Photo Of Dolphin."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "/images/dolphin2.jpg",
+          "alt": "Dolphins putting their Heads above Water."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "/images/dolphin3.jpg",
+          "alt": "Dolphins breaching above Water."
+        },
+        {
+          "imagelink": "/images/dolphin4.jpg",
+          "alt": "Dolphin Couple."
+        },
+        {
+          "imagelink": "/images/dolphin5.jpg",
+          "alt": "Dolphin on the open Ocean."
+        },
+        {
+          "imagelink": "/images/dolphin6.jpg",
+          "alt": "Group of Dolphins."
+        },
+        {
+          "imagelink": "/images/dolphin7.jpg",
+          "alt": "A group of Dolphins submerging."
+        },
+        {
+          "imagelink": "/images/dolphin8.jpg",
+          "alt": "A group of Dolphins breaching."
+        },
+        {
+          "imagelink": "/images/dolphin9.jpg",
+          "alt": "Dolphins doing tricks."
+        }
+      ],
+      "environment": "/scene/UnderWater-CoralWithLight.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "whale",
+      "name": "Whale",
+      "type": "Mammal",
+      "diet": "Carnivore",
+      "tamed": "Wild",
+      "habitat": ["Water"],
+      "locations": ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "The Antarctic Blue Whale is the biggest animal on the planet!",
+      "first_image" : [
+        {
+          "imagelink": "/images/whale2.jpg",
+          "alt": "Front view of a whale."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "/images/whale1.jpg",
+          "alt": "Whale jumping out of the water."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "/images/whale3.jpg",
+          "alt": "Whale emerging out of water."
+        },
+        {
+          "imagelink": "/images/whale4.jpg",
+          "alt": "Two whales swiming."
+        },
+        {
+          "imagelink": "/images/whale5.jpg",
+          "alt": "Whale breathing."
+        },
+        {
+          "imagelink": "/images/whale6.jpg",
+          "alt": "Whale emerging out of water."
+        },
+        {
+          "imagelink": "/images/whale7.jpg",
+          "alt": "Whale doing a backflip."
+        },
+        {
+          "imagelink": "/images/whale8.jpg",
+          "alt": "A mother whale and her son."
+        },
+        {
+          "imagelink": "/images/whale9.jpg",
+          "alt": "Two whales submerging."
+        }
+      ],
+      "environment": "/scene/UnderWater-CoralWithLight.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "crab",
+      "name": "Crab",
+      "type": "Crustacean",
+      "diet": "Omnivore",
+      "tamed": "Wild",
+      "habitat": ["Land", "Water"],
+      "locations": ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Crabs can walk in all directions, but mostly walk and run sideways!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg",
+          "alt": "White Shorthaired Dog In Green Field."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg",
+          "alt": "Closeup Photo Of Brown And Black Dog's Face."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+        }
+      ],
+      "environment": "/scene/UnderWater-CoralWithLight.env",
+      "video": false,
+      "imageSwap": true
+    }
+  ]
+}

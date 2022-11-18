@@ -1,0 +1,32 @@
+{
+  "types": [
+    {
+      "id": 1,
+      "name": "All Animals",
+      "url": "/animals/",
+      "query": { "tame": "" },
+      "description": "All available animals."
+    },
+    {
+      "id": 2,
+      "name": "Domestic",
+      "url": "/animals/",
+      "query": { "tame": "Domestic" },
+      "description": "Tamed animals."
+    },
+    {
+      "id": 3,
+      "name": "Wild",
+      "url": "/animals/",
+      "query": { "tame": "Wild" },
+      "description": "Undomesticated animals."
+    },
+    {
+      "id": 4,
+      "name": "Prehistoric",
+      "url": "/animals/",
+      "query": { "tame": "Prehistoric" },
+      "description": "World of dinosaurs."
+    }
+  ]
+}

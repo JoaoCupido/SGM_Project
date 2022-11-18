@@ -1,0 +1,32 @@
+.object-position-default {
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#object-position-dog {
+    object-position: 0 50%;
+}
+
+#object-position-cat {
+    object-position: 50% 10%;
+}
+
+#object-position-turtle {
+    object-position: 50% 100%;
+}
+
+#object-position-penguin {
+    object-position: 100% 0;
+}
+
+#object-position-parrot {
+    object-position: 100% 50%;
+}
+
+#object-position-dolphin {
+    object-position: 25% 20%;
+}
+
+#object-position-t-rex {
+    object-position: 75% 0;
+}
