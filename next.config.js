@@ -3,7 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['api-ninjas.com', 'images.pexels.com', 'images.unsplash.com']
+    domains: ['api-ninjas.com', 'images.pexels.com', 'images.unsplash.com'],
+    loader: 'akamai',
+    path: ''
   }
 }
 
