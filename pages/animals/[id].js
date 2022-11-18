@@ -101,7 +101,7 @@ export function swapImageFeature(imageSwap, imagesList)
                       emulateTouch={true}
                       dynamicHeight={true}>
                 {imagesList.map(image =>
-                    <div>
+                    <div key={image.imagelink}>
                         <img src={image.imagelink} alt={image.alt} className={`${"rounded"}`}/>
                         <p className="legend">{image.alt}</p>
                     </div>
