@@ -25,6 +25,14 @@ export async function getStaticProps({params}) {
             singleAnimalData = (objectData.animals)[i];
             break;
         }
+        else if (params.id === 'rabbit' && (objectData.animals)[i].id === 'bunny') {
+            singleAnimalData = (objectData.animals)[i];
+            break;
+        }
+        else if ((params.id === 'ladybeetle' || params.id === 'lady-beetle') && (objectData.animals)[i].id === 'ladybug') {
+            singleAnimalData = (objectData.animals)[i];
+            break;
+        }
     }
 
     return {
@@ -41,6 +49,9 @@ export async function getStaticPaths() {
     for (let j = 0; j < Object.keys(objectData.animals).length; j++) {
         arrayAnimalId.push((objectData.animals)[j].id);
     }
+    arrayAnimalId.push('rabbit');
+    arrayAnimalId.push('ladybeetle');
+    arrayAnimalId.push('lady-beetle');
 
     const paths = arrayAnimalId.map(animal => {
         return { params: { id: animal }}
