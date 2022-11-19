@@ -17,7 +17,7 @@
       ],
       "second_image" : [
         {
-          "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots1.jpeg",
           "alt": "Closeup Photo Of Brown And Black Dog's Face."
         }
       ],
@@ -27,11 +27,11 @@
           "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
         },
         {
-          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots1.jpeg",
           "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
         }
       ],
-      "environment": "/scene/Debug.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Debug.env",
       "video": true/false,
       "imageSwap": true/false
     }
