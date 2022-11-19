@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import React from "react";
 
 export default function Error() {
     return (
@@ -23,7 +24,7 @@ export default function Error() {
 
                 <p>
                     <Link href="/">
-                        <a className="btn btn-primary" role="button">Back to Homepage</a>
+                        <a className={`${"btn btn-lg btn-success me-2 mb-2"} ${styles["btn-primary"]}`} role="button">Back To Homepage</a>
                     </Link>
                 </p>
             </main>
