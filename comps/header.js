@@ -9,7 +9,7 @@ export default function Header() {
                 <div className="container-fluid">
                     <Link href="/">
                         <a className="navbar-brand">
-                            <Image className="d-inline-block align-text-top" src="/logoTitle.png" alt="Animal World Logo" width={503*0.9} height={90*0.9} />
+                            <Image className="d-inline-block align-text-top" src="https://joaocupido.github.io/sgm_project/logoTitle.png" alt="Animal World Logo" width={503*0.9} height={90*0.9} />
                         </a>
                     </Link>
                     <div className="navbar-nav navbar-collapse">
