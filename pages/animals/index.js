@@ -83,7 +83,7 @@ export default function Animals(props) {
 
   const searchFilter = (animalsList) => {
 	  return animalsList.filter(
-		  (animal) => animal.id.includes(query.search)
+		  (animal) => animal.name.toLowerCase().includes(query.search.toLowerCase())
 	  )
   }
 
