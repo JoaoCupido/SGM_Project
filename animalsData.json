@@ -632,6 +632,112 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/RainForest.env",
       "video": false,
       "imageSwap": true
+    },
+    {
+      "id": "clownfish",
+      "name": "Clownfish",
+      "type": "Fish",
+      "diet": "Omnivore",
+      "tamed": "Wild",
+      "habitat": ["Water"],
+      "locations": ["Australia"],
+      "fun_fact": "Clownfish are best known for being featured in the movie 'Finding Nemo'!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/4593104/pexels-photo-4593104.jpeg",
+          "alt": "Bright exotic clownfish swimming in aquarium."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/12861712/pexels-photo-12861712.jpeg",
+          "alt": "A Bunch of Clownfish Swimming in a Tank."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/clownfish3.jpg",
+          "alt": "Common Clownfish."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/clownfish4.jpg",
+          "alt": "Couple of Clownfish."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/clownfish5.jpg",
+          "alt": "A Clownfish on a Coral."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/clownfish6.jpg",
+          "alt": "A Colorful Clownfish swimming in Big Aquarium."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/clownfish7.jpg",
+          "alt": "A tropical Clownfish near Seaweed in Aquarium."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/clownfish8.jpg",
+          "alt": "A Clownfish hiding on a Pink Coral."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/clownfish9.jpg",
+          "alt": "A Group of Clownfishes swimming underwater."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
+      "video": false,
+      "imageSwap": true
+    },
+    {
+      "id": "goldfish",
+      "name": "Goldfish",
+      "type": "Fish",
+      "diet": "Omnivore",
+      "tamed": "Wild",
+      "habitat": ["Water"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Goldfish live and sleep with their eyes open!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2053815/pexels-photo-2053815.jpeg",
+          "alt": "Goldfish in Water."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/5966770/pexels-photo-5966770.jpeg",
+          "alt": "Orange Fantail Goldfish in a Fish Tank."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/goldfish3.jpg",
+          "alt": "A Goldfish in a Plastic Bag."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/goldfish4.jpg",
+          "alt": "Red and Yellow Goldfish in a Tank."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/goldfish5.jpg",
+          "alt": "Close-up Photo of a Goldfish Swimming Underwater."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/goldfish6.jpg",
+          "alt": "A Girl looking at a Goldfish."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/goldfish7.jpg",
+          "alt": "Close-Up Photo of Gold Fish in Aquarium."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/goldfish8.jpg",
+          "alt": "Goldfish Swimming in Tank."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
+      "video": false,
+      "imageSwap": true
     }
   ]
 }
