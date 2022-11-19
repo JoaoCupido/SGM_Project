@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 // add bootstrap icons
 import 'bootstrap-icons/font/bootstrap-icons.css'
 // own css files here
-import '../styles/dynamicAnimalList.css'
 
 import Layout from '../comps/Layout'
 

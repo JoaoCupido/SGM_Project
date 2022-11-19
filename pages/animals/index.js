@@ -351,8 +351,8 @@ export default function Animals(props) {
 		  {animals.map(animal =>
 			  <div key={animal.id} className="col-sm-2 pt-2 pb-2 pl-2 pr-2">
 				<Link href={"/animals/" + animal.id}>
-					<div className={`${"card text-center"} ${styles["animalCard"]}`}>
-						<Image className="card-img-top object-position-default" id={"object-position-" + animal.id} src={((animal.first_image)[0]).imagelink} alt={((animal.first_image)[0]).alt} width={240} height={240}/>
+					<div className={`${"card h-100 text-center"} ${styles["animalCard"]}`}>
+						<img className="card-img-top" src={((animal.first_image)[0]).imagelink} alt={((animal.first_image)[0]).alt}/>
 						<div className="card-body">
 							<h2 className="card-title">{animal.name}</h2>
 						</div>
