@@ -569,6 +569,69 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
       "video": false,
       "imageSwap": true
+    },
+    {
+      "id": "ladybug",
+      "name": "Ladybug",
+      "type": "Insect",
+      "diet": "Omnivore",
+      "tamed": "Wild",
+      "habitat": ["Air", "Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Not all ladybugs are red with black spots!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/3482947/pexels-photo-3482947.jpeg",
+          "alt": "Selective Focus Photography of a Ladybug on Leaf."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/121472/ladybug-beetle-coccinellidae-insect-121472.jpeg",
+          "alt": "Close Up Photo of Ladybug on Leaf during Daytime."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug3.jpeg",
+          "alt": "Ladybug Insect on a Leaf."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug4.jpeg",
+          "alt": "Two Ladybugs on a Green Leaf."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug5.jpeg",
+          "alt": "Ladybug on Plant."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug6.jpeg",
+          "alt": "Red Ladybug on Green Grass."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug7.jpeg",
+          "alt": "Ladybug on a Leaf."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug8.jpeg",
+          "alt": "Ladybug on Green Leaf."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug9.jpeg",
+          "alt": "Orange Ladybug on Green Plant."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug10.jpeg",
+          "alt": "Orange and Black Ladybug on Green Plant."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/ladybug11.jpeg",
+          "alt": "Orange and Black Ladybug on a Dusty Floor."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/RainForest.env",
+      "video": false,
+      "imageSwap": true
     }
   ]
 }
