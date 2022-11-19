@@ -55,7 +55,7 @@
           "alt": "Brown and White Short Coated Small Dog in Pink Plastic Basket on Green Grass."
         }
       ],
-      "environment": "/scene/Garden.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Garden.env",
       "video": false,
       "imageSwap": true
     },
@@ -110,7 +110,7 @@
           "alt": "White Kitten in Brown Cardboard Box."
         }
       ],
-      "environment": "/scene/Garden.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Garden.env",
       "video": false,
       "imageSwap": true
     },
@@ -145,15 +145,15 @@
           "alt": "Selective Focus Photo of Two Brown Horses."
         },
         {
-          "imagelink": "/images/horse1.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/horse1.jpg",
           "alt": "Close-Up Shot of a Brown Pony."
         },
         {
-          "imagelink": "/images/horse2.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/horse2.jpg",
           "alt": "Close-Up Shot of a Horse next to a Baby Horse."
         },
         {
-          "imagelink": "/images/horse3.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/horse3.jpg",
           "alt": "Baby Horse Lying Down on the Grass."
         },
         {
@@ -165,7 +165,7 @@
           "alt": "Cute Baby Horse on a Field."
         }
       ],
-      "environment": "/scene/Farm.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Farm.env",
       "video": false,
       "imageSwap": true
     },
@@ -224,7 +224,7 @@
           "alt": "Black and Yellow Turtle Relaxing."
         }
       ],
-      "environment": "/scene/UnderWater-CoralWithLight.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
       "video": false,
       "imageSwap": true
     },
@@ -251,39 +251,39 @@
       ],
       "images" : [
         {
-          "imagelink": "/images/penguin1.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/penguin1.jpg",
           "alt": "Photo of a Penguin Walking On Seashore."
         },
         {
-          "imagelink": "/images/penguin2.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/penguin2.jpg",
           "alt": "Black and White Penguin Walking on Sand."
         },
         {
-          "imagelink": "/images/penguin3.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/penguin3.jpg",
           "alt": "Baby Penguin With Their Mom."
         },
         {
-          "imagelink": "/images/penguin4.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/penguin4.jpg",
           "alt": "Photo of a Grayscale Penguin."
         },
         {
-          "imagelink": "/images/penguin5.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/penguin5.jpg",
           "alt": "Photo of the Penguin's Back."
         },
         {
-          "imagelink": "/images/penguin6.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/penguin6.jpg",
           "alt": "A Group of Penguins On Ice."
         },
         {
-          "imagelink": "/images/penguin7.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/penguin7.jpg",
           "alt": "A Penguin by the Shore."
         },
         {
-          "imagelink": "/images/penguin8.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/penguin8.jpg",
           "alt": "Two Adult Penguins next to their Baby Penguins."
         }
       ],
-      "environment": "/scene/Snow.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Snow.env",
       "video": false,
       "imageSwap": true
     },
@@ -298,35 +298,35 @@
       "fun_fact": "Tyrannosaurus Rex means 'Tyrant Lizard'!",
       "first_image" : [
         {
-          "imagelink": "/images/t-rex1.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/t-rex1.jpg",
           "alt": "Brown T-Rex Illustration."
         }
       ],
       "second_image" : [
         {
-          "imagelink": "/images/t-rex2.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/t-rex2.jpg",
           "alt": "Green and Black T-Rex Model in a Bamboo Forest."
         }
       ],
       "images" : [
         {
-          "imagelink": "/images/t-rex3.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/t-rex3.jpg",
           "alt": "A Green T-Rex Toy on a Beach"
         },
         {
-          "imagelink": "/images/t-rex4.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/t-rex4.jpg",
           "alt": "Brown T-Rex Toy on a Wooden Table."
         },
         {
-          "imagelink": "/images/t-rex5.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/t-rex5.jpg",
           "alt": "Green T-Rex Toy on a Round and Wooden Table."
         },
         {
-          "imagelink": "/images/t-rex6.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/t-rex6.jpg",
           "alt": "Red and Green T-Rex Toy."
         }
       ],
-      "environment": "/scene/Dirt.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
       "video": false,
       "imageSwap": true
     },
@@ -341,55 +341,55 @@
       "fun_fact": "Parrots are incredibly intelligent!",
       "first_image" : [
         {
-          "imagelink": "/images/parrots1.jpeg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots1.jpeg",
           "alt": "A group of parrots."
         }
       ],
       "second_image" : [
         {
-          "imagelink": "/images/parrots2.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots2.jpg",
           "alt": "A Couple of parrots."
         }
       ],
       "images" : [
         {
-          "imagelink": "/images/parrots3.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots3.jpg",
           "alt": "Red parrot."
         },
         {
-          "imagelink": "/images/parrots4.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots4.jpg",
           "alt": "Parrot eating."
         },
         {
-          "imagelink": "/images/parrots5.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots5.jpg",
           "alt": "Yellow and blue parrot."
         },
         {
-          "imagelink": "/images/parrots6.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots6.jpg",
           "alt": "Parrots cracking a nut."
         },
         {
-          "imagelink": "/images/parrots7.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots7.jpg",
           "alt": "A colorful parrot."
         },
         {
-          "imagelink": "/images/parrots8.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots8.jpg",
           "alt": "A grey parrot."
         },
         {
-          "imagelink": "/images/parrots9.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots9.jpg",
           "alt": "Blue parrot."
         },
 	      {
-          "imagelink": "/images/parrots10.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots10.jpg",
           "alt": "Two parrots playing."
         },
 	      {
-          "imagelink": "/images/parrots11.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots11.jpg",
           "alt": "White parrot."
         }
       ],
-      "environment": "/scene/RainForest.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/RainForest.env",
       "video": false,
       "imageSwap": true
     },
@@ -404,47 +404,47 @@
       "fun_fact": "Dolphins are chatty animals!",
       "first_image" : [
         {
-          "imagelink": "/images/dolphin1.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin1.jpg",
           "alt": "Closeup Photo Of Dolphin."
         }
       ],
       "second_image" : [
         {
-          "imagelink": "/images/dolphin2.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin2.jpg",
           "alt": "Dolphins putting their Heads above Water."
         }
       ],
       "images" : [
         {
-          "imagelink": "/images/dolphin3.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin3.jpg",
           "alt": "Dolphins breaching above Water."
         },
         {
-          "imagelink": "/images/dolphin4.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin4.jpg",
           "alt": "Dolphin Couple."
         },
         {
-          "imagelink": "/images/dolphin5.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin5.jpg",
           "alt": "Dolphin on the open Ocean."
         },
         {
-          "imagelink": "/images/dolphin6.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin6.jpg",
           "alt": "Group of Dolphins."
         },
         {
-          "imagelink": "/images/dolphin7.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin7.jpg",
           "alt": "A group of Dolphins submerging."
         },
         {
-          "imagelink": "/images/dolphin8.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin8.jpg",
           "alt": "A group of Dolphins breaching."
         },
         {
-          "imagelink": "/images/dolphin9.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/dolphin9.jpg",
           "alt": "Dolphins doing tricks."
         }
       ],
-      "environment": "/scene/UnderWater-CoralWithLight.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
       "video": false,
       "imageSwap": true
     },
@@ -459,47 +459,47 @@
       "fun_fact": "The Antarctic Blue Whale is the biggest animal on the planet!",
       "first_image" : [
         {
-          "imagelink": "/images/whale2.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale2.jpg",
           "alt": "Front view of a whale."
         }
       ],
       "second_image" : [
         {
-          "imagelink": "/images/whale1.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale1.jpg",
           "alt": "Whale jumping out of the water."
         }
       ],
       "images" : [
         {
-          "imagelink": "/images/whale3.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale3.jpg",
           "alt": "Whale emerging out of water."
         },
         {
-          "imagelink": "/images/whale4.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale4.jpg",
           "alt": "Two whales swiming."
         },
         {
-          "imagelink": "/images/whale5.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale5.jpg",
           "alt": "Whale breathing."
         },
         {
-          "imagelink": "/images/whale6.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale6.jpg",
           "alt": "Whale emerging out of water."
         },
         {
-          "imagelink": "/images/whale7.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale7.jpg",
           "alt": "Whale doing a backflip."
         },
         {
-          "imagelink": "/images/whale8.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale8.jpg",
           "alt": "A mother whale and her son."
         },
         {
-          "imagelink": "/images/whale9.jpg",
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/whale9.jpg",
           "alt": "Two whales submerging."
         }
       ],
-      "environment": "/scene/UnderWater-CoralWithLight.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
       "video": false,
       "imageSwap": true
     },
@@ -534,7 +534,7 @@
           "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
         }
       ],
-      "environment": "/scene/UnderWater-CoralWithLight.env",
+      "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
       "video": false,
       "imageSwap": true
     }

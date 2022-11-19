@@ -303,7 +303,7 @@ export default function Animals(props) {
 	  <Head>
 		<title>Animal World | List</title>
 		<meta name="description" content="A list of animals to search for and filter." />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" href="https://joaocupido.github.io/sgm_project/favicon.ico" />
 	  </Head>
 
 	  <main>

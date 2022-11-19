@@ -59,7 +59,7 @@ export function hasVideo(video, animalId)
     let source;
     if(video)
     {
-        source = "/videos/" + animalId + ".mp4";
+        source = "https://joaocupido.github.io/sgm_project/videos/" + animalId + ".mp4";
         return (
             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
                 <video width={800} controls className={`${"pb-2 pl-2 pt-2 rounded"}`}>
@@ -124,7 +124,7 @@ export default function Animal(props) {
         const modelName = props.id + ".glb";
         SceneLoader.ShowLoadingScreen = false;
         SceneLoader.Append(
-            "/models/",
+            "https://joaocupido.github.io/sgm_project/models/",
             modelName,
             scene,
             (meshes) => {
@@ -147,7 +147,7 @@ export default function Animal(props) {
             <Head>
                 <title>Animal World | {props.name}</title>
                 <meta name="description" content={content} />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="https://joaocupido.github.io/sgm_project/favicon.ico" />
             </Head>
 
 

@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: url('/background/Forest_Layer1.png'), url('/background/Forest_Layer2.png'), url('/background/Forest_Layer3.png'), url('/background/Forest_Layer4.png');
+  background-image: url('https://joaocupido.github.io/sgm_project/background/Forest_Layer1.png'), url('https://joaocupido.github.io/sgm_project/background/Forest_Layer2.png'), url('https://joaocupido.github.io/sgm_project/background/Forest_Layer3.png'), url('https://joaocupido.github.io/sgm_project/background/Forest_Layer4.png');
   background-size: cover;
   min-height: 100vh;
   background-position: center;

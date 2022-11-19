@@ -8,7 +8,7 @@ export default function Error() {
             <Head>
                 <title>Animal World | Error 404</title>
                 <meta name="description" content="Interactive and Fun Website for Kids!" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="https://joaocupido.github.io/sgm_project/favicon.ico" />
             </Head>
 
 
