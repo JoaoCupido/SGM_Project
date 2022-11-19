@@ -336,13 +336,13 @@
       "type": "Bird",
       "diet": "Omnivore",
       "tamed": "Wild",
-      "habitat": ["Africa", "Asia", "Australia", "North America", "South America"],
-      "locations": ["Air"],
+      "habitat": ["Air"],
+      "locations": ["Africa", "Asia", "Australia", "North America", "South America"],
       "fun_fact": "Parrots are incredibly intelligent!",
       "first_image" : [
         {
           "imagelink": "https://joaocupido.github.io/sgm_project/images/parrots1.jpeg",
-          "alt": "A group of parrots."
+          "alt": "A Portrait of a Macaw."
         }
       ],
       "second_image" : [
