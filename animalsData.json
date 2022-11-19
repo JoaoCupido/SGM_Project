@@ -738,6 +738,73 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
       "video": false,
       "imageSwap": true
+    },
+    {
+      "id": "bunny",
+      "name": "Bunny/Rabbit",
+      "type": "Mammal",
+      "diet": "Herbivore",
+      "tamed": "Domestic",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Bunnies are really good jumpers!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/104373/pexels-photo-104373.jpeg",
+          "alt": "Beige Rabbit Resting on Green Grasses during Daytime."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/33152/european-rabbits-bunnies-grass-wildlife.jpg",
+          "alt": "Two Rabbits Eating Grass at Daytime."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny3.jpg",
+          "alt": "Close-up of a Rabbit on Field."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny4.jpg",
+          "alt": "Photo of a Black Rabbit on a Grass Field."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny5.jpg",
+          "alt": "Selective Focus Photo of Rabbit."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny6.jpg",
+          "alt": "White Black and Brown Rabbit Near Brown Wooden Fence."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny7.jpg",
+          "alt": "Selective Photography Of Grey Rabbit."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny8.jpg",
+          "alt": "White and Brown Rabbit by Grass."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny9.jpg",
+          "alt": "White and Black Rabbit on Gray Textile."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny10.jpg",
+          "alt": "A Brown Rabbit."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny11.jpg",
+          "alt": "A Black Baby Rabbit."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/bunny12.jpg",
+          "alt": "Gray and Brown Rabbit on Wall Corner."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Garden.env",
+      "video": false,
+      "imageSwap": true
     }
   ]
 }
