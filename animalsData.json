@@ -514,24 +514,56 @@
       "fun_fact": "Crabs can walk in all directions, but mostly walk and run sideways!",
       "first_image" : [
         {
-          "imagelink": "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg",
-          "alt": "White Shorthaired Dog In Green Field."
+          "imagelink": "https://images.pexels.com/photos/3805358/pexels-photo-3805358.jpeg",
+          "alt": "Photo Of A Red Crab On Ground."
         }
       ],
       "second_image" : [
         {
-          "imagelink": "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg",
-          "alt": "Closeup Photo Of Brown And Black Dog's Face."
+          "imagelink": "https://images.pexels.com/photos/13122009/pexels-photo-13122009.jpeg",
+          "alt": "Closeup Photo Of A Crab On Sand."
         }
       ],
       "images" : [
         {
-          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
-          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab3.jpg",
+          "alt": "A Person Holding A Hermit Crab."
         },
         {
-          "imagelink": "https://images.pexels.com/photos/994174/pexels-photo-994174.jpeg",
-          "alt": "Adult Tan and White Pembroke Welsh Corgi Sits on Floor."
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab4.jpg",
+          "alt": "A Small Crab on the Seashore."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab5.jpg",
+          "alt": "A Crab On A Beach."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab12.jpg",
+          "alt": "Photo Of A Crab On The Sand."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab6.jpg",
+          "alt": "Blue Crab crawling on a stony Ground."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab7.jpg",
+          "alt": "Orange Crab on Gray Rock."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab8.jpg",
+          "alt": "Red Crab on a Rock."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab9.jpg",
+          "alt": "A Little Crab crawling on sandy Shore."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab10.jpg",
+          "alt": "Close-up Photo of Hands Holding a Small Crab."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/crab11.jpg",
+          "alt": "A Yellow Crab walking on Sand."
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
