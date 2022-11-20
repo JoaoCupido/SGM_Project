@@ -57,7 +57,7 @@ export function dropdownFilter(arrayData, dataSelected, handleChange, isMulti, i
             isMulti={isMulti}
             placeholder={<div>{placeholderString}</div>}
             defaultValue={hasDefaultValue}
-            isClearable="true"
+            isClearable={!isSorter}
             className="basic-select"
             classNamePrefix="select"
             onChange={event => handleChange(dataSelected, event)}
