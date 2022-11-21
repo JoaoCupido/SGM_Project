@@ -32,7 +32,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/Debug.env",
-      "video": true/false,
+      "video": [],
       "imageSwap": true/false
     }
   ]

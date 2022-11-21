@@ -71,7 +71,7 @@ export function hasVideo(video, animalId, videoLanguage, handleChange)
     let source, arrayData = [];
     if(video.length > 0)
     {
-        source = "https://joaocupido.github.io/sgm_project/videos/" + animalId + "-" + videoLanguage + ".mp4";
+        source = "https://joaocupido.github.io/sgm_project/videos/" + animalId + "-" + videoLanguage;
         for(let i = 0; i < video.length; i++)
         {
             arrayData.push({value: video[i].toLowerCase(), label: "Video: " + video[i]})
@@ -104,8 +104,8 @@ export function hasVideo(video, animalId, videoLanguage, handleChange)
                     />
                 </div>
                 <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                    <video key={source} controls className={`${"pb-2 pt-2 rounded"}`}>
-                        <source src={source} type="video/mp4"/>
+                    <video key={source + ".mp4"} poster={source + "-placeholder.jpg"} controls className={`${"pb-2 pt-2 rounded"}`}>
+                        <source src={source + ".mp4"} type="video/mp4"/>
                         Your browser does not support HTML video.
                     </video>
                 </div>
@@ -116,7 +116,7 @@ export function hasVideo(video, animalId, videoLanguage, handleChange)
         source = "";
         return (
             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                <video width={800} controls className={`${"pb-2 pl-2 pt-2 rounded"}`} poster="https://joaocupido.github.io/sgm_project/videos/video-placeholder.jpg">
+                <video width={0} controls className={`${"rounded"}`} poster="https://joaocupido.github.io/sgm_project/videos/video-placeholder.jpg">
                     <source src={source} type="video/mp4"/>
                     Your browser does not support HTML video.
                 </video>
@@ -243,7 +243,7 @@ export default function Animal(props) {
                         </div>
                     </div>
                     <div className={`${"row"}`}>
-                        <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
+                        <div className={`${"pb-2 col-sm-12 d-flex align-items-center justify-content-center"}`}>
                             <SceneComponent antialias adaptToDeviceRatio onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" style={{ width: "100%", height: "100%" }} className={`${"rounded"}`}/>
                         </div>
                         { hasVideo(props.video, props.id, videoLanguage, handleChangeVideoLanguage) }

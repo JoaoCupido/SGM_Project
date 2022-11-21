@@ -111,7 +111,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/Garden.env",
-      "video": false,
+      "video":[],
       "imageSwap": true
     },
     {
@@ -166,7 +166,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/Farm.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -225,7 +225,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -284,7 +284,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/Snow.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -327,7 +327,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -390,7 +390,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/RainForest.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -445,7 +445,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -500,7 +500,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -567,7 +567,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -630,7 +630,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/RainForest.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -685,7 +685,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -736,7 +736,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     },
     {
@@ -803,7 +803,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/Garden.env",
-      "video": false,
+      "video": [],
       "imageSwap": true
     }
   ]
