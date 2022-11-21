@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Link from 'next/link';
-import React from "react";
+import React, {useState} from "react";
 import {CubeTexture, SceneLoader} from "@babylonjs/core";
 import '@babylonjs/loaders/glTF';
 import SceneComponent from 'babylonjs-hook';
@@ -11,6 +11,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
 import path from 'path';
+import Select from "react-select";
 
 export async function getStaticProps({params}) {
     const filePath = path.join(process.cwd(), 'animalsData.json');
@@ -65,18 +66,49 @@ export async function getStaticPaths() {
 
 
 
-export function hasVideo(video, animalId)
+export function hasVideo(video, animalId, videoLanguage, handleChange)
 {
-    let source;
-    if(video)
+    let source, arrayData = [];
+    if(video.length > 0)
     {
-        source = "https://joaocupido.github.io/sgm_project/videos/" + animalId + ".mp4";
+        source = "https://joaocupido.github.io/sgm_project/videos/" + animalId + "-" + videoLanguage + ".mp4";
+        for(let i = 0; i < video.length; i++)
+        {
+            arrayData.push({value: video[i].toLowerCase(), label: "Video: " + video[i]})
+        }
+        const customStylesArrow = {
+            dropdownIndicator: base => ({
+                ...base,
+                color: "grey" // Custom colour
+            }),
+            container: provided => ({
+                ...provided,
+                flex: 1,
+                width: 45
+            })
+        };
         return (
-            <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                <video width={800} controls className={`${"pb-2 pl-2 pt-2 rounded"}`}>
-                    <source src={source} type="video/mp4"/>
-                    Your browser does not support HTML video.
-                </video>
+            <div>
+                <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                    <Select
+                        name="videoLanguageDropdown"
+                        options={arrayData}
+                        isMulti={false}
+                        placeholder={<div>Select video language...</div>}
+                        defaultValue={[arrayData[0]]}
+                        isClearable={false}
+                        className="basic-select"
+                        classNamePrefix="select"
+                        onChange={event => handleChange(event)}
+                        styles={customStylesArrow}
+                    />
+                </div>
+                <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                    <video key={source} controls className={`${"pb-2 pt-2 rounded"}`}>
+                        <source src={source} type="video/mp4"/>
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
             </div>
         )
     }
@@ -129,6 +161,18 @@ export function swapImageFeature(imageSwap, imagesList)
 }
 
 export default function Animal(props) {
+    const [videoLanguage, setVideoLanguage] = useState('english');
+    const handleChangeVideoLanguage = (e) => {
+        //console.log(e)
+        if(e !== null) {
+            setVideoLanguage(e.value)
+        }
+        else
+        {
+            setVideoLanguage('english')
+        }
+    }
+
     const onSceneReady = (scene) => {
         scene.createDefaultCamera(true);
 
@@ -202,7 +246,7 @@ export default function Animal(props) {
                         <div className={`${"pb-3 pt-2 col d-flex align-items-center justify-content-center"}`}>
                             <SceneComponent antialias adaptToDeviceRatio onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" style={{ width: "100%", height: "100%" }} className={`${"rounded"}`}/>
                         </div>
-                        { hasVideo(props.video, props.id) }
+                        { hasVideo(props.video, props.id, videoLanguage, handleChangeVideoLanguage) }
                     </div>
                     <div className={`${"row"}`}>
                         <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>

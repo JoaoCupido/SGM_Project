@@ -56,7 +56,7 @@
         }
       ],
       "environment": "https://joaocupido.github.io/sgm_project/scene/Garden.env",
-      "video": false,
+      "video": ["English", "Português"],
       "imageSwap": true
     },
     {
