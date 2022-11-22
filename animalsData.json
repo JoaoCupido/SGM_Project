@@ -805,6 +805,65 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/Garden.env",
       "video": [],
       "imageSwap": true
+    },
+    {
+      "id": "cow",
+      "name": "Cow",
+      "type": "Mammal",
+      "diet": "Herbivore",
+      "tamed": "Domestic",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "All cows are female!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/248337/pexels-photo-248337.jpeg",
+          "alt": "Portrait of Cow standing in Pasture."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/1449656/pexels-photo-1449656.jpeg",
+          "alt": "Brown Baby Cow inside a Barn."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/cow1.jpg",
+          "alt": "A group of Black-and-White Cows."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/cow2.jpg",
+          "alt": "A group of Cows next to Water."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/cow3.jpg",
+          "alt": "A Selective Photo of a Cow."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/cow4.jpg",
+          "alt": "A Close-up Photography of Two Cows."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/cow5.jpg",
+          "alt": "Three Cows in Field under Clear Blue Sky."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/cow6.jpg",
+          "alt": "Black and White Cow on Green Grass Field."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/cow7.jpg",
+          "alt": "Close-up Photo of Brown Baby Cow."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/cow8.jpg",
+          "alt": "A Herd of Cows."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Farm.env",
+      "video": [],
+      "imageSwap": true
     }
   ]
 }
