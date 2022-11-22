@@ -234,7 +234,7 @@ export default function Animal(props) {
                         </div>
                     </div>
                     <div className={`${"row"}`}>
-                        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                        <div className={`${"pb-2 col col-xs-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center"}`}>
                             <SceneComponent antialias adaptToDeviceRatio onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" style={{ width: "100%", height: "100%" }} className={`${"rounded"}`}/>
                         </div>
                         { hasVideo(props.video, props.id, videoLanguage, handleChangeVideoLanguage) }
