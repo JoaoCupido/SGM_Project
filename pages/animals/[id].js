@@ -81,15 +81,9 @@ export function hasVideo(video, animalId, videoLanguage, handleChange)
                 ...base,
                 color: "grey" // Custom colour
             }),
-            container: provided => ({
-                ...provided,
-                flex: 1,
-                width: 45
-            })
         };
         return (
-            <div>
-                <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
+                <div className={`${"pb-2 col align-items-center justify-content-center"}`}>
                     <Select
                         name="videoLanguageDropdown"
                         options={arrayData}
@@ -102,21 +96,18 @@ export function hasVideo(video, animalId, videoLanguage, handleChange)
                         onChange={event => handleChange(event)}
                         styles={customStylesArrow}
                     />
-                </div>
-                <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
                     <video key={source + ".mp4"} poster={source + "-placeholder.jpg"} controls className={`${"pb-2 pt-2 rounded"}`}>
                         <source src={source + ".mp4"} type="video/mp4"/>
                         Your browser does not support HTML video.
                     </video>
                 </div>
-            </div>
         )
     }
     else {
         source = "";
         return (
             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                <video width={0} controls className={`${"rounded"}`} poster="https://joaocupido.github.io/sgm_project/videos/video-placeholder.jpg">
+                <video controls className={`${"rounded"}`} poster="https://joaocupido.github.io/sgm_project/videos/video-placeholder.jpg">
                     <source src={source} type="video/mp4"/>
                     Your browser does not support HTML video.
                 </video>
@@ -243,7 +234,7 @@ export default function Animal(props) {
                         </div>
                     </div>
                     <div className={`${"row"}`}>
-                        <div className={`${"pb-2 col-sm-12 d-flex align-items-center justify-content-center"}`}>
+                        <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
                             <SceneComponent antialias adaptToDeviceRatio onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" style={{ width: "100%", height: "100%" }} className={`${"rounded"}`}/>
                         </div>
                         { hasVideo(props.video, props.id, videoLanguage, handleChangeVideoLanguage) }
