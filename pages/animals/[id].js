@@ -107,7 +107,7 @@ export function hasVideo(video, animalId, videoLanguage, handleChange)
         source = "";
         return (
             <div className={`${"pb-2 col d-flex align-items-center justify-content-center"}`}>
-                <video controls className={`${"rounded"}`} poster="https://joaocupido.github.io/sgm_project/videos/video-placeholder.jpg">
+                <video controls className={`${"rounded"}`} width={800} poster="https://joaocupido.github.io/sgm_project/videos/video-placeholder.jpg">
                     <source src={source} type="video/mp4"/>
                     Your browser does not support HTML video.
                 </video>
