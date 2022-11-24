@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
         <div className="content">
             <div className='App'>
                 <ScrollToTop bgColor={"rgb(56 229 77 / 75%)"} strokeFillColor={"rgb(253 255 0 / 50%)"} strokeEmptyColor={"rgb(120 122 0 / 85%)"}
-                             symbol={<i className="bi bi-caret-up-fill"></i>} style={{ zIndex: 99 }}/>
+                             symbol={<i className="bi bi-caret-up-fill text-white"></i>} style={{ zIndex: 99 }}/>
             </div>
             <Header/>
                 {children}
