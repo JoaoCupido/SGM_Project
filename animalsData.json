@@ -864,6 +864,65 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/Farm.env",
       "video": [],
       "imageSwap": true
+    },
+    {
+      "id": "chicken",
+      "name": "Chicken",
+      "type": "Bird",
+      "diet": "Omnivore",
+      "tamed": "Domestic",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Chickens can distinguish between more than 100 faces!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2122825/pexels-photo-2122825.jpeg",
+          "alt": "Close-up Photo of a Chicken."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2446695/pexels-photo-2446695.jpeg",
+          "alt": "A Group of Chickens."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/chicken1.jpg",
+          "alt": "Person Feeding White Chicken Outdoor."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/chicken2.jpg",
+          "alt": "Four Assorted-color male Chickens."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/chicken3.jpg",
+          "alt": "Selective Photography of a male Chicken."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/chicken4.jpg",
+          "alt": "Two Brown female Chickens and one Red male Chicken."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/chicken5.jpg",
+          "alt": "Yellow Baby Chicken on Grass Field."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/chicken6.jpg",
+          "alt": "Brown and Black Chicken near Baby Chickens."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/chicken7.jpg",
+          "alt": "A Group of Brown Chickens in Green Field."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/chicken8.jpg",
+          "alt": "Yellow Baby Chickens on a Orange Towel."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Farm.env",
+      "video": [],
+      "imageSwap": true
     }
   ]
 }
