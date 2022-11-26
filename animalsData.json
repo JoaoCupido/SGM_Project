@@ -923,6 +923,65 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/Farm.env",
       "video": [],
       "imageSwap": true
+    },
+    {
+      "id": "pig",
+      "name": "Pig",
+      "type": "Mammal",
+      "diet": "Omnivore",
+      "tamed": "Domestic",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Pigs love belly rubs!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/110820/pexels-photo-110820.jpeg",
+          "alt": "Close-up Photo of a Pig."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/2252541/pexels-photo-2252541.jpeg",
+          "alt": "Group of Pink Pigs."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pig1.jpg",
+          "alt": "Pigs in a Grass Field during Daytime."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pig2.jpg",
+          "alt": "Short-hair Black and White Pig swimming in Water."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pig3.jpg",
+          "alt": "Photo of a Short Pig."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pig4.jpg",
+          "alt": "Person holding a Baby Pig."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pig5.jpg",
+          "alt": "Domestic Pigs near Water."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pig6.jpg",
+          "alt": "A Pink Pig sitting on Floor."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pig7.jpg",
+          "alt": "Photograph of a Pink Pig."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pig8.jpg",
+          "alt": "Photograph of a Baby Pig."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Farm.env",
+      "video": [],
+      "imageSwap": true
     }
   ]
 }
