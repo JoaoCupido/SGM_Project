@@ -1025,6 +1025,65 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
       "video": [],
       "imageSwap": true
+    },
+    {
+      "id": "seal",
+      "name": "Seal",
+      "type": "Mammal",
+      "diet": "Carnivore",
+      "tamed": "Wild",
+      "habitat": ["Land", "Water"],
+      "locations": ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"],
+      "fun_fact": "Seals can sleep underwater!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/23087/sea-animal-dog-zoo-23087.jpg",
+          "alt": "Close-up Photograph of a Seal underwater."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/9700846/pexels-photo-9700846.jpeg",
+          "alt": "Closeup Photo of a Group of Seals."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/seal1.jpg",
+          "alt": "Cute seal on Crystal Clear Water."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/seal2.jpg",
+          "alt": "Photo of Gray Seal on Ice."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/seal3.jpg",
+          "alt": "Closer Photo of a Seal."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/seal4.jpg",
+          "alt": "Seal with Eyes Closed Emerging From Water."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/seal5.jpg",
+          "alt": "Seal sleeping on White Sand."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/seal6.jpg",
+          "alt": "Cute seals sleeping on rocky seashore."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/7492308/pexels-photo-7492308.jpg",
+          "alt": "Close-up Photo of Cute Seal with eyes closed."
+        },
+        {
+          "imagelink": "https://images.pexels.com/photos/14213182/pexels-photo-14213182.jpeg",
+          "alt": "Seal on White Sand."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
+      "video": [],
+      "imageSwap": true
     }
   ]
 }
