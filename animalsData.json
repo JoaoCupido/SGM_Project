@@ -982,6 +982,49 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/Farm.env",
       "video": [],
       "imageSwap": true
+    },
+    {
+      "id": "velociraptor",
+      "name": "Velociraptor",
+      "type": "Reptile",
+      "diet": "Carnivore",
+      "tamed": "Prehistoric",
+      "habitat": ["Land"],
+      "locations": ["---"],
+      "fun_fact": "Velociraptors had feathers, not scaly, reptilian skin!",
+      "first_image" : [
+        {
+          "imagelink": "https://cdn.pixabay.com/photo/2022/11/06/03/27/velociraptor-7573184_960_720.jpg",
+          "alt": "Photograph of a Statue of Velociraptor."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/velociraptor1.jpg",
+          "alt": "Illustration of a Velociraptor."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/velociraptor2.jpg",
+          "alt": "Illustration of a Statue of a Velociraptor."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/velociraptor3.jpg",
+          "alt": "Close-up Photograph of a Velociraptor."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/velociraptor4.jpg",
+          "alt": "Photo of a Velociraptor."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/velociraptor5.jpg",
+          "alt": "Photo of a Velociraptor Toy on a White Background."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
+      "video": [],
+      "imageSwap": true
     }
   ]
 }
