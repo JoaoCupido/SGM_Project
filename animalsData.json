@@ -1084,6 +1084,69 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/UnderWater-CoralWithLight.env",
       "video": [],
       "imageSwap": true
+    },
+    {
+      "id": "elephant",
+      "name": "Elephant",
+      "type": "Mammal",
+      "diet": "Herbivore",
+      "tamed": "Wild",
+      "habitat": ["Land"],
+      "locations": ["Africa", "Asia"],
+      "fun_fact": "Elephants are the world's largest land animal!",
+      "first_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/1054666/pexels-photo-1054666.jpeg",
+          "alt": "Close-up Photo of a Gray African Elephant."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/86413/elephant-africa-okavango-delta-animal-86413.jpeg",
+          "alt": "A group of large Elephants near Lake."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/7492315/pexels-photo-7492315.jpeg",
+          "alt": "Side View Of A Brown Elephant In Half Body Shot."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/elephant1.jpg",
+          "alt": "An Adult Elephant beside on Baby Elephant."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/elephant2.jpg",
+          "alt": "Photo of Baby Elephant Sleeping on the Ground."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/elephant3.jpg",
+          "alt": "A Group of Elephants Walking Beside Body of Water during Daytime."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/elephant4.jpg",
+          "alt": "Black Elephant Near Trees."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/elephant5.jpg",
+          "alt": "An Elephant holding with the trunk."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/elephant6.jpg",
+          "alt": "A Gray Elephant near Tree."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/elephant7.jpg",
+          "alt": "A Group of Elephants in Water."
+        },
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/elephant8.jpg",
+          "alt": "Two Gray Elephant on Brown Sand."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/DryLand.env",
+      "video": [],
+      "imageSwap": true
     }
   ]
 }
