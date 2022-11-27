@@ -1,3 +1,6 @@
+-- LOGO GRAPHICS --
+https://cooltext.com/
+
 -- BACKGROUND LAYERS --
 Gamemaker Bundle Asset #1 - Fantasy Side-Scrolling Platformer
 
