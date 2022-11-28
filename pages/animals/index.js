@@ -96,7 +96,7 @@ export default function Animals(props) {
                 resultFilter.push({value: animalsList[i].type, label: animalsList[i].type});
             }
         }
-        return resultFilter.sort();
+        return resultFilter.sort(sortBy('value'));
     }
     const typeFilter = (animalsList) => {
         return animalsList.filter(
@@ -124,7 +124,7 @@ export default function Animals(props) {
                 resultFilter.push({value: animalsList[i].diet, label: animalsList[i].diet});
             }
         }
-        return resultFilter.sort();
+        return resultFilter.sort(sortBy('value'));
     }
     const dietFilter = (animalsList) => {
         return animalsList.filter(
@@ -160,7 +160,7 @@ export default function Animals(props) {
                 resultFilter.push({value: animalsList[i].tamed, label: animalsList[i].tamed});
             }
         }
-        return resultFilter.sort();
+        return resultFilter.sort(sortBy('value'));
     }
     const tameFilter = (animalsList) => {
         return animalsList.filter(
