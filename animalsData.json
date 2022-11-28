@@ -1240,6 +1240,37 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
       "video": [],
       "imageSwap": false
+    },
+    {
+      "id": "triceratops",
+      "name": "Triceratops",
+      "type": "Reptile",
+      "diet": "Herbivore",
+      "tamed": "Prehistoric",
+      "habitat": ["Land"],
+      "locations": ["---"],
+      "fun_fact": "Triceratops had nose horns for defence!",
+      "first_image" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/triceratops1.jpg",
+          "alt": "Close-up Photo of a Statue of Triceratops."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/triceratops2.jpg",
+          "alt": "A group of statues of Triceratops (both baby and adult)."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/triceratops2.jpg",
+          "alt": "A group of statues of Triceratops (both baby and adult)."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
+      "video": [],
+      "imageSwap": false
     }
   ]
 }
