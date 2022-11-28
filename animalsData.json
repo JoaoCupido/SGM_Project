@@ -1147,6 +1147,37 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/DryLand.env",
       "video": [],
       "imageSwap": true
+    },
+    {
+      "id": "stegosaurus",
+      "name": "Stegosaurus",
+      "type": "Reptile",
+      "diet": "Herbivore",
+      "tamed": "Prehistoric",
+      "habitat": ["Land"],
+      "locations": ["---"],
+      "fun_fact": "Stegosaurus had a brain the size of a walnut!",
+      "first_image" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/stegosaurus1.jpg",
+          "alt": "Illustration of a Stegosaurus in a Brown Field."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/stegosaurus2.jpg",
+          "alt": "Closeup Photo of a Statue of a Stegosaurus."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/stegosaurus2.jpg",
+          "alt": "Closeup Photo of a Statue of a Stegosaurus."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
+      "video": [],
+      "imageSwap": false
     }
   ]
 }
