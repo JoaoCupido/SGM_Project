@@ -1209,6 +1209,37 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
       "video": [],
       "imageSwap": false
+    },
+    {
+      "id": "pteranodon",
+      "name": "Pteranodon",
+      "type": "Reptile",
+      "diet": "Carnivore",
+      "tamed": "Prehistoric",
+      "habitat": ["Air"],
+      "locations": ["---"],
+      "fun_fact": "Pteranodons had no teeth, but rather a sharp beak!",
+      "first_image" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pteranodon1.jpg",
+          "alt": "Illustration of a Pteranodon."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pteranodon2.jpg",
+          "alt": "Illustration of a group of Pteranodons flying above an Island."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/pteranodon2.jpg",
+          "alt": "Illustration of a group of Pteranodons flying above an Island."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
+      "video": [],
+      "imageSwap": false
     }
   ]
 }
