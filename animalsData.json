@@ -1178,6 +1178,37 @@
       "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
       "video": [],
       "imageSwap": false
+    },
+    {
+      "id": "brachiosaurus",
+      "name": "Brachiosaurus",
+      "type": "Reptile",
+      "diet": "Herbivore",
+      "tamed": "Prehistoric",
+      "habitat": ["Land"],
+      "locations": ["---"],
+      "fun_fact": "The name 'Brachiosaurus' means: 'Arm Lizard'!",
+      "first_image" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/brachiosaurus1.jpg",
+          "alt": "Illustration of a Brachiosaurus only showing the upper body (Eunostos/Wikimedia Commons/CC BY 4.0)."
+        }
+      ],
+      "second_image" : [
+        {
+          "imagelink": "https://images.pexels.com/photos/8014610/pexels-photo-8014610.jpeg",
+          "alt": "Brachiosaurus Plastic Toy on a Wooden Surface."
+        }
+      ],
+      "images" : [
+        {
+          "imagelink": "https://joaocupido.github.io/sgm_project/images/brachiosaurus1.jpg",
+          "alt": "Illustration of a Brachiosaurus only showing the upper body (Eunostos/Wikimedia Commons/CC BY 4.0)."
+        }
+      ],
+      "environment": "https://joaocupido.github.io/sgm_project/scene/Dirt.env",
+      "video": [],
+      "imageSwap": false
     }
   ]
 }
