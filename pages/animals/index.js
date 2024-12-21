@@ -350,7 +350,7 @@ export default function Animals(props) {
 		<div className="row">
 		  {animals.map(animal =>
 			  <div key={animal.id} className="col-sm-2 pt-2 pb-2 pl-2 pr-2">
-				<Link href={"/animals/" + animal.id}>
+				<Link legacyBehavior href={"/animals/" + animal.id}>
 					<div className={`${"card h-100 text-center"} ${styles["animalCard"]}`}>
 						<img className="card-img-top" src={((animal.first_image)[0]).imagelink} alt={((animal.first_image)[0]).alt}/>
 						<div className="card-body">

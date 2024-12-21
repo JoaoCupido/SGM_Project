@@ -23,7 +23,7 @@ export default function Error() {
                 </p>
 
                 <p>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a className={`${"btn btn-lg btn-success me-2 mb-2"} ${styles["btn-primary"]}`} role="button">Back To Homepage</a>
                     </Link>
                 </p>

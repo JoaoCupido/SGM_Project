@@ -28,7 +28,7 @@ export default function Home(props) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <Link href="/">
+          Welcome to <Link legacyBehavior href="/">
           <a>Animal World!</a>
           </Link>
         </h1>
@@ -40,7 +40,7 @@ export default function Home(props) {
         <div className={styles.grid}>
           {types.map(type =>
             <div key={type.id}>
-              <Link href={{ pathname: type.url, query: type.query }}>
+              <Link legacyBehavior href={{ pathname: type.url, query: type.query }}>
                 <div className={styles.card}>
                   <h2>{type.name} &rarr;</h2>
                   <p>

@@ -248,7 +248,7 @@ export default function Animal(props) {
                 </main>
 
                 <p>
-                    <Link href="/animals/">
+                    <Link legacyBehavior href="/animals/">
                         <a className={`${"btn btn-lg btn-success me-2 mb-2"} ${styles["btn-primary"]}`} role="button">&larr; Go Back</a>
                     </Link>
                 </p>
